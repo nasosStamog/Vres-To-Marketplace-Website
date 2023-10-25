@@ -34,17 +34,24 @@ body{
     /* Βοητητική κλάση για κεντρικ΄ή στοίχιση φωτογραφιών */
   }
 
-#banner-logo{
+#banner-logo img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
     width: 59%;
+    margin-left: 20%;
+    margin-right: 250px;
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+    border: #756c59 solid;
+    border-width: 4px;
+    padding: 0%;
      /* Μέθοδος "κεντραρίσματος" του logo */
 }
 
 /* Όλα τα παρακάτω αφορούν το navigation bar */
 
 #menu-nav {
+    margin-top: 0.5%;
 	background-color: #dac399;
     float: left;
     width: 100%;
@@ -82,9 +89,10 @@ body{
 
 #menu-nav ul li a:hover {     
 	background-color: transparent;
-    color: #c48e2c;
-    
     /* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα */
+    color: #c48e2c;
+    transform: scale(1.025); /* Μεγαλώνουν τα γρα΄μματα με hover */
+    transition: transform 0.3s ease-in-out; /* Ομαλό transition */
 }
 #main-title{
     text-align: center;
