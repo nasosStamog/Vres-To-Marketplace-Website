@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(216, 192, 166);
+    /*  background της ιστοσελίδας */
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+    font-size:18px;
+    font-weight:normal;
+    /* Μέγεθος, font και χρώμα γραμματοσειράς */
+    line-height: 1.4em
+    /* κενό που υπάρχει από γραμμή σε γραμμή κειμένου */
+}
+
+#page{
+    width: 80%;
+    margin: 0 auto; 
+    position: relative;
+    overflow:hidden;
+    /* Μέθοδος "περιορισμού" της ιστοσελίδας στο 70% του συνολικού χώρου */
+}
+
+.box-1{
+    background-color: #fff5e7;
+    border: #756c59 solid;
+    border-width: 5px;
+    padding: 0px;
+    /* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* Βοητητική κλάση για κεντρικ΄ή στοίχιση φωτογραφιών */
+  }
+
+#banner-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 59%;
+     /* Μέθοδος "κεντραρίσματος" του logo */
+}
+
+/* Όλα τα παρακάτω αφορούν το navigation bar */
+
+#menu-nav {
+	background-color: #dac399;
+    float: left;
+    width: 100%;
+    color:white
+    /* Χρώμα του background του μενού και τοποθεσία */
+}
+
+#menu-nav ul {
+	font-family: Georgia, serif;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+    margin: 0 0 0 25%;
+
+    /* Στυλ αντικειμένων μενού, font, μέγεθος και bold */
+}
+
+#menu-nav ul li {
+    display: inline;
+    /* Eυθυγράμμιση αντικειμένων του μενού/λίστας */
+}
+
+#menu-nav ul li a {
+    background-color: transparent;
+    border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	float: left;
+	padding: 0.2em 12px;
+    text-decoration: none;
+    
+
+    /* Στύλ για τα αντικείμενα του menu ( άσπρες κάθετες γρααμμ΄ές, άσπρα γράμματα, τοποθεσία και αποστάσεις ) */
+}
+
+#menu-nav ul li a:hover {     
+	background-color: transparent;
+    color: #c48e2c;
+    
+    /* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα */
+}
+#main-title{
+    text-align: center;
+    color: #a95d12;
+    font-size: 180%;
+}
+.main-info{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+
+    /* Text Container το οποίο περιορίζει στην ουσία το κείμενο απ'το να ακουμπάει στα άκρα του border/κουτιού */
+    
+}
+
+#main-footer {
+    background-color: #000000;
+    padding-bottom: 0px;
+    text-align:center;
+    color: #dac399;
+    /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
+}
+#main-footer a:hover{
+    color: #edeae5;
+    /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
+}
+#main-footer a{
+    color: #dac399;
+    /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
+}
