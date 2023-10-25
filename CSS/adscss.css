@@ -123,3 +123,81 @@ body{
     color: #dac399;
     /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
+
+/*Όλα τα παρακάτω αφορούν την φόρμα στο contact.html*/
+
+#form {
+    text-align: left; /* Align form content to the left */
+    flex: 2; /* Occupy two-thirds of the available space */
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  label {
+    display: block; /* Display labels on a new line */
+    font-weight: bold; /* Make labels bold */
+    margin-top: 10px; /* Add spacing above labels */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"],
+  input[type="ID"],
+  textarea {
+    width: 100%; /* Make input fields and textarea full width */
+    padding: 10px; /* Add padding to input fields and textarea */
+    margin-bottom: 15px; /* Add spacing below input fields and textarea */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+  }
+  
+  input[type="message"],
+  textarea {
+    width: 100%; /* Make input fields and textarea full width */
+    padding: 10px; /* Add padding to input fields and textarea */
+    margin-bottom: 15px; /* Add spacing below input fields and textarea */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+    height: 150px; /* Adjust the height of the textarea */
+  }
+  
+  input[type="reset"],
+  input[type="submit"] {
+    background-color: #a95d12; /* Background color for buttons */
+    color: #fff; /* Text color for buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Round the corners */
+    cursor: pointer; /* Show a hand cursor on hover */
+    margin-right: 10px; /* Add spacing between buttons */
+  }
+  
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background-color: #d37f30; /* Change button color on hover */
+  }
+  #form-container {
+    display: flex; /* Use flexbox to arrange elements side by side */
+    justify-content: space-between; /* Separate text and form with space */
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px;
+  }
+  
+  #form-text {
+    flex: 1; /* Occupy one-third of the available space */
+    font-size: 30px;
+    line-height: 1.6em;
+    
+  }
+  
+#support-container{
+    font-size: 15px;
+    line-height: 1.3em;
+    color:#000000;
+    margin-bottom: -15px;
+}
