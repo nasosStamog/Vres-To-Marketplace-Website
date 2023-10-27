@@ -3,6 +3,7 @@ body{
   background-image: url("../media/blur_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   /*  background της ιστοσελίδας */
   color:rgb(0, 0, 0);
   font-family: Georgia, serif;
@@ -269,9 +270,109 @@ input[type="submit"]:hover {
 details summary { 
   cursor: pointer;
 }
+/*Όλα τα παρακα΄τω αφορούν την home-sales.html*/
 
+.line {
+  border: 0.1px solid #756c59;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
 
+.property-listings {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  margin: 20px auto;
+}
 
+.property {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
 
+.button {
+  font-size: 1em;
+  padding: 5px;
+  color: #000000;
+  border: 3px solid #000000;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  display: inline-block;
+}
+.button:hover {
+  background: #756c59;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0%;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  width: 60%;
+  position: relative;
+  transition: all 3s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  display: block;
+  margin-left: 250px;
+  margin-right: auto;
+  width: 100%;
+}
+
+.popup .close {
+  position:fixed;
+  top: 8%;
+  bottom: 0;
+  left: 79.5%;
+  right: 0;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #756c59;
+}
+.popup .content {
+  overflow-y: scroll ;
+  max-height:750px;
+  overflow: auto;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 90%;
+  }
+}
 
 
