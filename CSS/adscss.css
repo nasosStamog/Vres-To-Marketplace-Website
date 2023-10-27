@@ -1,221 +1,277 @@
 body{
-    background-color: rgb(216, 192, 166);
-    /*  background της ιστοσελίδας */
-    color:rgb(0, 0, 0);
-    font-family: Georgia, serif;
-    font-size:18px;
-    font-weight:normal;
-    /* Μέγεθος, font και χρώμα γραμματοσειράς */
-    line-height: 1.4em
-    /* κενό που υπάρχει από γραμμή σε γραμμή κειμένου */
+
+  background-image: url("../media/blur_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /*  background της ιστοσελίδας */
+  color:rgb(0, 0, 0);
+  font-family: Georgia, serif;
+  font-size:18px;
+  font-weight:normal;
+  /* Μέγεθος, font και χρώμα γραμματοσειράς */
+  line-height: 1.4em
+  /* κενό που υπάρχει από γραμμή σε γραμμή κειμένου */
 }
 
 #page{
-    width: 80%;
-    margin: 0 auto; 
-    position: relative;
-    overflow:hidden;
-    /* Μέθοδος "περιορισμού" της ιστοσελίδας στο 70% του συνολικού χώρου */
+  width: 80%;
+  margin: 0 auto; 
+  position: relative;
+  overflow:hidden;
+  /* Μέθοδος "περιορισμού" της ιστοσελίδας στο 70% του συνολικού χώρου */
 }
 
 .box-1{
-    background-color: #fff5e7;
-    border: #756c59 solid;
-    border-width: 5px;
-    padding: 0px;
-    /* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
+  background-color: #fff5e7;
+  border: #756c59 solid;
+  border-width: 5px;
+  padding: 0px;
+  /* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    /* Βοητητική κλάση για κεντρικ΄ή στοίχιση φωτογραφιών */
-  }
-
-#banner-logo img{
-    display: block;
-    
-    width: 59%;
-    margin-left: 20%;
-    margin-right: 250px;
-    margin-top: 0.5%;
-    margin-bottom: 0%;
-    border: #756c59 solid;
-    border-width: 4px;
-    padding: 0%;
-     /* Μέθοδος "κεντραρίσματος" του logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* Βοητητική κλάση για κεντρικ΄ή στοίχιση φωτογραφιών */
 }
-
+#banner-logo img{
+  display: block;
+  width: 59%;
+  margin-left: 20%;
+  margin-right: 250px;
+  margin-top: 65px;
+  border: #756c59 solid;
+  border-width: 3px;
+  padding: 0%;
+   /* Μέθοδος "κεντραρίσματος" του logo */
+}
+#logo {
+  float: left;
+  
+}
 /* Όλα τα παρακάτω αφορούν το navigation bar */
 
 #menu-nav {
-    margin-top: 0.5%;
-	background-color: #dac399;
-    float: left;
-    width: 100%;
-    color:white
-    /* Χρώμα του background του μενού και τοποθεσία */
+  margin-top: 0.5%;
+  background-color: #dac399;
+  float: right;
+  width: 100%;
+  color:white
+  /* Χρώμα του background του μενού και τοποθεσία */
 }
 
 #menu-nav ul {
-	font-family: Georgia, serif;
-	font-size: 150%;
-	font-weight: bold;
-	padding: 0;
-    margin: 0 0 0 25%;
+font-family: Georgia, serif;
+font-size: 150%;
+font-weight: bold;
+padding: 0;
+  margin: 0 0 0 25%;
 
-    /* Στυλ αντικειμένων μενού, font, μέγεθος και bold */
+  /* Στυλ αντικειμένων μενού, font, μέγεθος και bold */
 }
 
 #menu-nav ul li {
-    display: inline;
-    /* Eυθυγράμμιση αντικειμένων του μενού/λίστας */
+  display: inline;
+  display: inline-block;
+  padding-top: 5px;
+  position: relative;
+  /* Eυθυγράμμιση αντικειμένων του μενού/λίστας */
 }
 
 #menu-nav ul li a {
-    background-color: transparent;
-    border-left: 1px solid #FFFFFF;
-	border-right: 1px solid #FFFFFF;
-	color: #FFFFFF;
-	float: left;
-	padding: 0.2em 12px;
-    text-decoration: none;
-    
+  background-color: transparent;
 
-    /* Στύλ για τα αντικείμενα του menu ( άσπρες κάθετες γρααμμ΄ές, άσπρα γράμματα, τοποθεσία και αποστάσεις ) */
+  color: #FFFFFF;
+  float: left;
+  padding: 0.2em 12px;
+  text-decoration: none;
+  
+
+  /* Στύλ για τα αντικείμενα του menu ( άσπρες κάθετες γρααμμ΄ές, άσπρα γράμματα, τοποθεσία και αποστάσεις ) */
 }
+#menu-nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #756c59 ;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+#menu-nav a:hover::before {
+  width: 90%;
+}
+
 
 #menu-nav ul li a:hover {     
-	background-color: transparent;
-    /* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα */
-    color: #c48e2c;
-    transform: scale(1.025); /* Μεγαλώνουν τα γρα΄μματα με hover */
-    transition: transform 0.3s ease-in-out; /* Ομαλό transition */
+background-color: transparent;
+  /* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα */
+  color: #efede9;
+  transform: scale(1.025); /* Μεγαλώνουν τα γρα΄μματα με hover */
+  transition: transform 0.3s ease-in-out; /* Ομαλό transition */
 }
+/*Τέλος του μενού*/
+
 #main-title{
-    text-align: center;
-    color: #a95d12;
-    font-size: 180%;
+  text-align: center;
+  color: #a95d12;
+  font-size: 180%;
 }
 .main-info{
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
 
-    /* Text Container το οποίο περιορίζει στην ουσία το κείμενο απ'το να ακουμπάει στα άκρα του border/κουτιού */
-    
+  /* Text Container το οποίο περιορίζει στην ουσία το κείμενο απ'το να ακουμπάει στα άκρα του border/κουτιού */
+  
 }
 
 #main-footer {
-    background-color: #000000;
-    padding-bottom: 0px;
-    text-align:center;
-    color: #dac399;
-    /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
+  background-color: #000000;
+  padding-bottom: 3px;
+  text-align:center;
+  color: #dac399;
+  /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
 #main-footer a:hover{
-    color: #edeae5;
-    /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
+  color: #edeae5;
+  /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
 #main-footer a{
-    color: #dac399;
-    /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
+  color: #dac399;
+  /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
 
 /*Όλα τα παρακάτω αφορούν την φόρμα στο contact.html*/
 
 #form {
-    text-align: left; /* Align form content to the left */
-    flex: 2; /* Occupy two-thirds of the available space */
-    padding: 20px;
-  }
-  
-  form {
-    max-width: 400px; /* Set a maximum width for the form */
-    margin: 0 auto; /* Center the form horizontally */
-  }
-  
-  label {
-    display: block; /* Display labels on a new line */
-    font-weight: bold; /* Make labels bold */
-    margin-top: 10px; /* Add spacing above labels */
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="phone"],
-  input[type="ID"],
-  textarea {
-    width: 100%; /* Make input fields and textarea full width */
-    padding: 10px; /* Add padding to input fields and textarea */
-    margin-bottom: 15px; /* Add spacing below input fields and textarea */
-    border: 2px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Round the corners */
-  }
-  
-  input[type="message"],
-  textarea {
-    width: 100%; /* Make input fields and textarea full width */
-    padding: 10px; /* Add padding to input fields and textarea */
-    margin-bottom: 15px; /* Add spacing below input fields and textarea */
-    border: 2px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Round the corners */
-    height: 150px; /* Adjust the height of the textarea */
-  }
-  
-  input[type="reset"],
-  input[type="submit"] {
-    background-color: #a95d12; /* Background color for buttons */
-    color: #fff; /* Text color for buttons */
-    padding: 10px 20px; /* Add padding to buttons */
-    border: none; /* Remove the button border */
-    border-radius: 5px; /* Round the corners */
-    cursor: pointer; /* Show a hand cursor on hover */
-    margin-right: 10px; /* Add spacing between buttons */
-  }
-  
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    background-color: #d37f30; /* Change button color on hover */
-  }
-  #form-container {
-    display: flex; /* Use flexbox to arrange elements side by side */
-    justify-content: space-between; /* Separate text and form with space */
-    max-width: 1000px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 10px;
-  }
-  
-  #form-text {
-    flex: 1; /* Occupy one-third of the available space */
-    font-size: 30px;
-    line-height: 1.6em;
-    color: #a95d12;
-  }
-  
+  text-align: left; /* Align form content to the left */
+  flex: 2; /* Occupy two-thirds of the available space */
+  padding: 20px;
+}
+
+form {
+  max-width: 400px; /* Set a maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+label {
+  display: block; /* Display labels on a new line */
+  font-weight: bold; /* Make labels bold */
+  margin-top: 10px; /* Add spacing above labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="ID"],
+textarea {
+  width: 100%; /* Make input fields and textarea full width */
+  padding: 10px; /* Add padding to input fields and textarea */
+  margin-bottom: 15px; /* Add spacing below input fields and textarea */
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Round the corners */
+}
+
+input[type="message"],
+textarea {
+  width: 100%; /* Make input fields and textarea full width */
+  padding: 10px; /* Add padding to input fields and textarea */
+  margin-bottom: 15px; /* Add spacing below input fields and textarea */
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Round the corners */
+  height: 150px; /* Adjust the height of the textarea */
+}
+
+input[type="reset"],
+input[type="submit"] {
+  background-color: #a95d12; /* Background color for buttons */
+  color: #fff; /* Text color for buttons */
+  padding: 10px 20px; /* Add padding to buttons */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Show a hand cursor on hover */
+  margin-right: 10px; /* Add spacing between buttons */
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #d37f30; /* Change button color on hover */
+}
+#form-container {
+  display: flex; /* Use flexbox to arrange elements side by side */
+  justify-content: space-between; /* Separate text and form with space */
+  max-width: 1000px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10px;
+}
+
+#form-text {
+  flex: 1; /* Occupy one-third of the available space */
+  font-size: 30px;
+  line-height: 1.6em;
+  color: #a95d12;
+}
+
 #support-container{
-    font-size: 15px;
-    line-height: 1.3em;
-    color:#000000;
-    margin-bottom: -15px;
+  font-size: 15px;
+  line-height: 1.3em;
+  color:#000000;
+  margin-bottom: -15px;
 }
 
 #member{
-    border: #756c59 solid;
-    border-width: 2px;
-    padding: 5px;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 20px;
-    margin-left: 5px;
-    border-radius: 10px;
+  border: #756c59 solid;
+  border-width: 2px;
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 20px;
+  margin-left: 5px;
+  border-radius: 10px;
 }
 .team-member{
-    display: flex; /* Use flexbox to arrange elements side by side */
-    justify-content: space-evenly;
-    max-width: 1100px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 10px;
+  display: flex; /* Use flexbox to arrange elements side by side */
+  justify-content: space-evenly;
+  max-width: 1100px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10px;
 }
+.main-categories{
+  display: flex;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: 60px;
+  width: 90%;
+  height: fit-content;
+  
+}
+.category{
+  flex: 33.33%;
+  padding: 10px;
+  
+}
+.category img{
+  border: #756c59 solid;
+  border-width: 3px;
+}
+
+.categories-menu ul{
+  list-style-type: none;
+
+}
+details summary { 
+  cursor: pointer;
+}
+
+
+
+
+
+
