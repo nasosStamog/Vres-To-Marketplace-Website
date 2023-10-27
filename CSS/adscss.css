@@ -109,7 +109,9 @@ padding: 0;
   width: 90%;
 }
 
-
+#menu-nav ul li a:active{
+  box-shadow: 2px 2px 5px #756c59;
+}
 #menu-nav ul li a:hover {     
 background-color: transparent;
   /* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα */
@@ -270,7 +272,7 @@ input[type="submit"]:hover {
 details summary { 
   cursor: pointer;
 }
-/*Όλα τα παρακα΄τω αφορούν την home-sales.html*/
+/*---------------------Όλα τα παρακα΄τω αφορούν την home-sales.html------------------------*/
 
 .line {
   border: 0.1px solid #756c59;
@@ -375,4 +377,35 @@ details summary {
   }
 }
 
+/*----------Εικόνες Ακινήτων-----------*/
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+.container:hover .property-image {
+  opacity: 0.3;
+  
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.container {
+  position: relative;
+  float: left;
+  width: 48%;
+  padding: 1px;
+  
+}
+.property-image{
+  border: #756c59 solid;
+  border-width: 3px;
+  margin-left: 110px ;
+}
