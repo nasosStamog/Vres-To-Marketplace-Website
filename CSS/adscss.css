@@ -280,8 +280,8 @@ details summary {
   margin-bottom: 10px;
 }
 
-.listings {
-  overflow: hidden;
+.property-listings {
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px auto;
 }
@@ -338,7 +338,7 @@ details summary {
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
   display: block;
-  margin-left: 0;
+  margin-left: 250px;
   margin-right: auto;
   width: 100%;
 }
@@ -359,8 +359,8 @@ details summary {
   color: #756c59;
 }
 .popup .content {
-  overflow-y: auto ;
-  max-height:550px;
+  overflow-y: scroll ;
+  max-height:750px;
   overflow: auto;
 }
 .popup img {
@@ -376,7 +376,7 @@ details summary {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-55%, -50%);
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -399,18 +399,5 @@ details summary {
 .property-image{
   border: #756c59 solid;
   border-width: 3px;
-  margin-left: 55px ;
-}
-/*--------------------------------------*/
-.content a{
-  text-decoration: none;
-}
-.content a:link:hover{
-  color: #847759;
-}
-.content a:visited:hover{
-  color:  #847759;
-}
-.content a:visited{
-  color: #000;
+  margin-left: 110px ;
 }
