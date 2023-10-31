@@ -13,6 +13,7 @@ body{
   line-height: 1.4em
   /* κενό που υπάρχει από γραμμή σε γραμμή κειμένου */
 }
+
 #page{
   width: 80%;
   margin: 0 auto; 
@@ -345,13 +346,11 @@ details summary {
 }
 
 .popup .close {
-  position:fixed;
-  top: 8%;
-  bottom: 0;
-  left: 79.5%;
-  right: 0;
+  position: absolute;
+  top: 8px;
+  right: 16px;
   transition:  ease-out 300ms;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   text-decoration: none;
   color: #333;
@@ -394,8 +393,13 @@ details summary {
   position: relative;
   float: left;
   width: 48%;
-  padding: 1px;
+  padding: 5px;
   
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
 }
 .property-image{
   border: #756c59 solid;
