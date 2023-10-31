@@ -280,8 +280,8 @@ details summary {
   margin-bottom: 10px;
 }
 
-.property-listings {
-  flex-wrap: wrap;
+.listings {
+  overflow: hidden;
   justify-content: space-around;
   margin: 20px auto;
 }
@@ -291,6 +291,7 @@ details summary {
   border: 0.1px solid #756c59;
   margin-top: -10px;
 }
+
 
 .button {
   font-size: 1em;
@@ -338,7 +339,7 @@ details summary {
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
   display: block;
-  margin-left: 250px;
+  margin-left: 0;
   margin-right: auto;
   width: 100%;
 }
@@ -359,8 +360,8 @@ details summary {
   color: #756c59;
 }
 .popup .content {
-  overflow-y: scroll ;
-  max-height:750px;
+  overflow-y: auto ;
+  max-height:550px;
   overflow: auto;
 }
 .popup img {
@@ -376,7 +377,7 @@ details summary {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -393,11 +394,24 @@ details summary {
   position: relative;
   float: left;
   width: 48%;
-  padding: 10px;
+  padding: 1px;
   
 }
 .property-image{
   border: #756c59 solid;
   border-width: 3px;
-  margin-left: 110px ;
+  margin-left: 55px ;
+}
+/*--------------------------------------*/
+.content a{
+  text-decoration: none;
+}
+.content a:link:hover{
+  color: #847759;
+}
+.content a:visited:hover{
+  color:  #847759;
+}
+.content a:visited{
+  color: #000;
 }
