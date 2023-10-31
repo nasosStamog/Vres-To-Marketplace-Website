@@ -412,10 +412,11 @@ details summary {
 }
 .content a:link:hover{
   color: #847759;
+  text-decoration: underline;
 }
 .content a:visited:hover{
   color:  #847759;
 }
 .content a:visited{
-  color: #000;
+  color: #924a0a;
 }
