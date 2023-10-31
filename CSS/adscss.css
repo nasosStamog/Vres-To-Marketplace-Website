@@ -13,7 +13,6 @@ body{
   line-height: 1.4em
   /* κενό που υπάρχει από γραμμή σε γραμμή κειμένου */
 }
-
 #page{
   width: 80%;
   margin: 0 auto; 
@@ -125,6 +124,7 @@ background-color: transparent;
   text-align: center;
   color: #a95d12;
   font-size: 180%;
+  margin-top: 5px;
 }
 .main-info{
   margin-left: 10px;
@@ -272,7 +272,7 @@ input[type="submit"]:hover {
 details summary { 
   cursor: pointer;
 }
-/*---------------------Όλα τα παρακα΄τω αφορούν την home-sales.html------------------------*/
+/*---------------------Όλα τα παρακάτω αφορούν την home-sales.html------------------------*/
 
 .line {
   border: 0.1px solid #756c59;
@@ -280,21 +280,16 @@ details summary {
   margin-bottom: 10px;
 }
 
-.property-listings {
-  flex-wrap: wrap;
+.listings {
+  overflow: hidden;
   justify-content: space-around;
-  
   margin: 20px auto;
 }
 
-.property {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
+.listings .line{
+  
+  border: 0.1px solid #756c59;
+  margin-top: -10px;
 }
 
 .button {
@@ -321,7 +316,7 @@ details summary {
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 200ms;
   visibility: hidden;
-  opacity: 0%;
+  opacity: 0;
 }
 .overlay:target {
   visibility: visible;
@@ -343,7 +338,7 @@ details summary {
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
   display: block;
-  margin-left: 250px;
+  margin-left: 0;
   margin-right: auto;
   width: 100%;
 }
@@ -354,7 +349,7 @@ details summary {
   bottom: 0;
   left: 79.5%;
   right: 0;
-  transition: all 200ms;
+  transition:  ease-out 300ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -364,17 +359,14 @@ details summary {
   color: #756c59;
 }
 .popup .content {
-  overflow-y: scroll ;
-  max-height:750px;
+  overflow-y: auto ;
+  max-height:550px;
   overflow: auto;
 }
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 90%;
-  }
+.popup img {
+  border: #000000 solid;
+  border-width: 3px;
+  
 }
 
 /*----------Εικόνες Ακινήτων-----------*/
@@ -384,7 +376,7 @@ details summary {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -401,11 +393,24 @@ details summary {
   position: relative;
   float: left;
   width: 48%;
-  padding: 1px;
+  padding: 10px;
   
 }
 .property-image{
   border: #756c59 solid;
   border-width: 3px;
-  margin-left: 110px ;
+  margin-left: 55px ;
+}
+/*--------------------------------------*/
+.content a{
+  text-decoration: none;
+}
+.content a:link:hover{
+  color: #847759;
+}
+.content a:visited:hover{
+  color:  #847759;
+}
+.content a:visited{
+  color: #000;
 }
