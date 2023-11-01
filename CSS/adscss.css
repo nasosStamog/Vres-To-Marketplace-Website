@@ -309,7 +309,7 @@ input[type="submit"]:hover {
   list-style-type: none;
 
 }
-.category-main{
+#category-main{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -485,11 +485,6 @@ input[type="submit"]:hover {
   border: #756c59 solid;
   border-width: 3px;
 }
-
-
-
-
-
 
 
 .categories-menu{
