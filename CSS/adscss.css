@@ -54,7 +54,7 @@ body{
 }
 /* Όλα τα παρακάτω αφορούν το navigation bar */
 
-#menu-nav {
+.menu-nav {
   margin-top: 0.5%;
   background-color: #dac399;
   float: right;
@@ -63,7 +63,7 @@ body{
   /* Χρώμα του background του μενού και τοποθεσία */
 }
 
-#menu-nav ul {
+.menu-nav ul {
 font-family: Georgia, serif;
 font-size: 150%;
 font-weight: bold;
@@ -73,7 +73,7 @@ padding: 0;
   /* Στυλ αντικειμένων μενού, font, μέγεθος και bold */
 }
 
-#menu-nav ul li {
+.menu-nav ul li {
   display: inline;
   display: inline-block;
   padding-top: 5px;
@@ -81,7 +81,7 @@ padding: 0;
   /* Eυθυγράμμιση αντικειμένων του μενού/λίστας */
 }
 
-#menu-nav ul li a {
+.menu-nav ul li a {
   background-color: transparent;
 
   color: #FFFFFF;
@@ -92,7 +92,7 @@ padding: 0;
 
   /* Στύλ για τα αντικείμενα του menu ( άσπρες κάθετες γρααμμ΄ές, άσπρα γράμματα, τοποθεσία και αποστάσεις ) */
 }
-#menu-nav a::before {
+.menu-nav a::before {
   content: '';
   display: block;
   height: 5px;
@@ -105,14 +105,14 @@ padding: 0;
   transition: all ease-in-out 250ms;
 }
 
-#menu-nav a:hover::before {
+.menu-nav a:hover::before {
   width: 90%;
 }
 
-#menu-nav ul li a:active{
+.menu-nav ul li a:active{
   box-shadow: 2px 2px 5px #756c59;
 }
-#menu-nav ul li a:hover {     
+.menu-nav ul li a:hover {     
 background-color: transparent;
   /* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα */
   color: #efede9;
