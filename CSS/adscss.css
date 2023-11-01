@@ -123,7 +123,7 @@ background-color: transparent;
 
 #main-title{
   text-align: center;
-  color: #a95d12;
+  color: #724734;
   font-size: 180%;
   margin-top: 5px;
 }
@@ -229,24 +229,63 @@ input[type="submit"]:hover {
   color:#000000;
   margin-bottom: -15px;
 }
-
-#member{
-  border: #756c59 solid;
-  border-width: 2px;
-  padding: 5px;
-  width: fit-content;
-  height: fit-content;
-  margin-top: 20px;
-  margin-left: 5px;
+/*----------------Όλα τα παρακάτω αφορούν το about.html------------------*/
+.main-about-us {
+  background-color: #f9f9f9;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-.team-member{
-  display: flex; /* Use flexbox to arrange elements side by side */
-  justify-content: space-evenly;
-  max-width: 1100px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 10px;
+
+/* Style the team member section */
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: left;
 }
+
+/* Style the team member image */
+.team-member img {
+  border: 2px solid white;
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style the member article */
+#member {
+  flex: 1;
+}
+
+/* Style member headings */
+#member h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#member h3 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#member h4 {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Add hover effect to team member images */
+.team-member img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 .main-categories{
   display: flex;
   margin-top: 100px;
@@ -270,8 +309,11 @@ input[type="submit"]:hover {
   list-style-type: none;
 
 }
-details summary { 
-  cursor: pointer;
+.category-main{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 51%;
 }
 /*---------------------Όλα τα παρακάτω αφορούν την home-sales.html------------------------*/
 
@@ -419,4 +461,218 @@ details summary {
 }
 .content a:visited{
   color: #924a0a;
+}
+/*---------Τα παρακάτω αφορούν το categories.html-------*/
+
+
+/* menu gia upokatigories kuriwn katigoriwn */
+
+.main-categories{
+  display: flex;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: 60px;
+  width: 90%;
+  height: fit-content;
+  
+}
+.category{
+  flex: 33.33%;
+  padding: 10px;
+  
+}
+.category img{
+  border: #756c59 solid;
+  border-width: 3px;
+}
+
+
+
+
+
+
+
+.categories-menu{
+  list-style: none;
+}
+
+.categories-menu h3 {
+ 
+  margin-left: 135px;
+  background-color: #dac399;
+  border: 2px solid #756c59; /* Add a border */
+  color: white;
+  padding: 3px 10px; /* Add padding for spacing between the text and border */
+  /* Additional styles for the h3 element */
+  display: inline-block; 
+  cursor: pointer;
+  
+  
+}
+
+.categories-menu ul {
+  margin-top: -20px;
+  background-color: #f5e7ca;  
+  width: 26.4%;  
+  list-style-type: none;
+  display: none;
+  /* border: 2px solid #756c59; */
+  padding: 10px;
+  text-align: center;
+  z-index: 999;
+  position:absolute;
+  line-height: 2.9em;
+ 
+  
+  
+}
+
+.categories-menu ul li {
+  border-bottom: 1px solid #756c59;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #756c59;
+}
+
+
+
+.categories-menu ul li a
+{
+  text-decoration: none;
+  color: #756c59;
+ 
+ 
+}
+
+.categories-menu ul li:hover{
+  background-color:  #dac399;
+}
+.categories-menu h3:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
+  color:  #efede9;
+} 
+.categories-menu ul:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
+}
+.categories-menu h3:hover + ul , .categories-menu ul:hover, .categories-menu ul li:hover{
+  display: block;
+  
+}
+
+
+
+
+
+
+/* Style the content table */
+#content-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  margin-left: 370px;
+
+}
+
+
+/* Style alternate rows with different background colors */
+#content-table tr:nth-child(even) {
+  background-color: #dac399;
+}
+
+/* Style the table cells */
+#content-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Style the table cells in the first column (labels) */
+#content-table td:first-child {
+  font-weight: bold;
+}
+
+/* Add some spacing between the table rows */
+#content-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Add borders to the table cells */
+#content-table td {
+  border: 2px solid #756c59;
+}
+
+
+#main-citroen img {
+  max-width: 450px; /* Set a maximum width for the image */
+  border: 2px solid #666;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888;
+  display: block; /* Center the image horizontally */
+  margin: 0 auto;
+  transition: transform 0.3s; 
+}
+
+#main-citroen img:hover {
+  transform: scale(1.1); /* Increase the image size on hover */
+}
+
+
+
+#citroen-imgs img {
+  max-width: 450px; /* Set a maximum width for the image */
+  border: 2px solid #666;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888;
+  display: inline-block; /* Center the image horizontally */
+  margin: 10px 0; /* Add space above and below the image */
+  margin-left: 50px;
+  transition: transform 0.3s; 
+}
+
+#citroen-imgs img:hover {
+  transform: scale(1.1); /* Increase the image size on hover */
+}
+
+#citroen-details {
+
+  text-align: center;
+}
+
+#citroen-details h3 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+}
+
+#citroen-details b {
+  color: #835440; /* Style the price in a different color */
+}
+
+#citroen-details a {
+  display: inline-block;
+  background-color: #835440;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#citroen-details a:hover {
+  background-color: #ca886b; /* Change the background color on hover */
+}
+
+#citroen-details p {
+  font-size: 18px;
+  color: #444;
+  margin-top: 20px;
+}
+
+
+#citroen-details p small {
+  color: #525252;
+}
+
+#citroen-details p small b {
+  color: #835440; /* Style the numbers in a different color */
 }
