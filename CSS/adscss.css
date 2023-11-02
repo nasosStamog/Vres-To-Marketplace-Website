@@ -1,5 +1,4 @@
 body{
-
   background-image: url("../media/blur_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -14,29 +13,31 @@ body{
   /* κενό που υπάρχει από γραμμή σε γραμμή κειμένου */
 }
 
+/* Μέθοδος "περιορισμού" της ιστοσελίδας στο 80% του συνολικού χώρου */
 .page{
   width: 80%;
   margin: 0 auto; 
   position: relative;
   overflow:hidden;
-  /* Μέθοδος "περιορισμού" της ιστοσελίδας στο 70% του συνολικού χώρου */
 }
 
+/* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
 .box-1{
   background-color: #fff5e7;
   border: #756c59 solid;
   border-width: 5px;
   padding: 0px;
-  /* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
 }
 
+/* Kλάση για κεντρική στοίχιση φωτογραφιών και div element */
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  /* Βοητητική κλάση για κεντρικ΄ή στοίχιση φωτογραφιών και div element */
 }
+
+/* Μέθοδος "κεντραρίσματος" του logo */
 .banner-logo img{
   display: block;
   width: 59%;
@@ -45,64 +46,63 @@ body{
   margin-top: 65px;
   border: #756c59 solid;
   border-width: 3px;
-  padding: 0%;
-   /* Μέθοδος "κεντραρίσματος" του logo */
+  padding: 0%; 
 }
+
+
 /*------------- Όλα τα παρακάτω αφορούν το navigation bar --------------------------*/
 
-/*Στοίχιση του logo αριστερά στο μενού*/
+/*Στοίχιση του Vres To logo αριστερά στο μενού*/
 #logo {
-  float: left;
-  
+  float: left;  
 }
+
+/* Χρώμα του background του μενού και τοποθεσία */
 .menu-nav {
   margin-top: 0.5%;
   background-color: #dac399;
   float: right;
   width: 100%;
-  color:white
-  /* Χρώμα του background του μενού και τοποθεσία */
+  color:white;  
 }
 
+/* Στυλ αντικειμένων μενού, font, μέγεθος και bold */
 .menu-nav ul {
-font-family: Georgia, serif;
-font-size: 150%;
-font-weight: bold;
-padding: 0;
+  font-family: Georgia, serif;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 0;
   margin: 0 0 0 25%;
-
-  /* Στυλ αντικειμένων μενού, font, μέγεθος και bold */
 }
 
+ /* Eυθυγράμμιση αντικειμένων του μενού/λίστας */
 .menu-nav ul li {
   display: inline;
   display: inline-block;
   padding-top: 5px;
   position: relative;
-  /* Eυθυγράμμιση αντικειμένων του μενού/λίστας */
 }
 
+/* Στύλ για τα αντικείμενα του menu ( άσπρες κάθετες γρααμμ΄ές, άσπρα γράμματα, τοποθεσία και αποστάσεις ) */
 .menu-nav ul li a {
   background-color: transparent;
-
   color: #FFFFFF;
   float: left;
   padding: 0.2em 12px;
   text-decoration: none;
-  
-
-  /* Στύλ για τα αντικείμενα του menu ( άσπρες κάθετες γρααμμ΄ές, άσπρα γράμματα, τοποθεσία και αποστάσεις ) */
 }
+
+/*Τα παρακάτω αφορούν το hover του μενού*/
+
+/* Τα δύο παρακάτω βάζουν το πάνω backround του ναβ */
 .menu-nav a::before {
   content: '';
   display: block;
   height: 5px;
   background-color: #756c59 ;
-
   position: absolute;
   top: 0;
   width: 0%;
-
   transition: all ease-in-out 250ms;
 }
 
@@ -110,33 +110,49 @@ padding: 0;
   width: 90%;
 }
 
+/* Όταν γίνεται κλικ σε ένα αντικείμενο του μενού δημιουργείται ένα box shadow*/
 .menu-nav ul li a:active{
   box-shadow: 2px 2px 5px #756c59;
 }
+
+/* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα και κάνει zoom*/
 .menu-nav ul li a:hover {     
-background-color: transparent;
-  /* Στύλ ώστε όταν ο κέρσορας "ακουμπάει" πάνω σε κάποιο αντικείμενο του μενού να αλλάζει χρώμα */
+  background-color: transparent;
   color: #efede9;
-  transform: scale(1.025); /* Μεγαλώνουν τα γρα΄μματα με hover */
+  transform: scale(1.025); /* Μεγαλώνουν τα γράμματα με hover */
   transition: transform 0.3s ease-in-out; /* Ομαλό transition */
 }
-/*Τέλος του μενού*/
 
+/* Τέλος για hover*/
+
+/* Για να δείξει στον χρήστη ποιο αντικείμενο του μενού έχει επιλέξει (ποιο είναι active) */
+.menu-nav a#act-menu-nav {
+  color: #efede9;
+  width: 90%;
+  position: relative; 
+  background-color: #a19171;
+}
+
+/*------------Τέλος του μενού----------*/
+
+
+/* Ο κάθε τίτλος στο πάνω μέρος της σελίδας */
 .main-title{
   text-align: center;
   color: #724734;
   font-size: 180%;
   margin-top: 5px;
 }
+
+/* Text Container το οποίο περιορίζει στην ουσία το κείμενο απ'το να ακουμπάει στα άκρα του border/κουτιού */
 .main-info{
   margin-left: 10px;
   margin-right: 10px;
-  padding-top: 0px;
-
-  /* Text Container το οποίο περιορίζει στην ουσία το κείμενο απ'το να ακουμπάει στα άκρα του border/κουτιού */
-  
+  padding-top: 0px;  
 }
-/*-----------Όλα τα παρακάτω αφορύν το footer*-----------*/
+
+/*-----------Όλα τα παρακάτω αφορύν το footer-----------*/
+
 .main-footer {
   background-color: #000000;
   padding-bottom: 3px;
@@ -152,6 +168,124 @@ background-color: transparent;
   color: #dac399;
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
+
+/*----------Τέλος το footer----------*/
+
+/*---------Τα παρακάτω αφορούν το categories.html-------*/
+
+/* menu gia upokatigories kuriwn katigoriwn */
+
+.main-categories{
+  display: flex;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: 60px;
+  width: 90%;
+  height: fit-content;
+  
+}
+σ
+.category{
+  flex: 33.33%;
+  padding: 10px;
+  
+}
+.category img{
+  border: #756c59 solid;
+  border-width: 3px;
+}
+
+.categories-menu ul{
+  list-style-type: none;
+
+}
+
+#category-main{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 51%;
+}
+.category{
+  flex: 33.33%;
+  padding: 10px;
+  
+}
+.category img{
+  border: #756c59 solid;
+  border-width: 3px;
+}
+
+
+.categories-menu{
+  list-style: none;
+}
+
+.categories-menu h3 {
+ 
+  margin-left: 135px;
+  background-color: #dac399;
+  border: 2px solid #756c59; /* Add a border */
+  color: white;
+  padding: 3px 10px; /* Add padding for spacing between the text and border */
+  /* Additional styles for the h3 element */
+  display: inline-block; 
+  cursor: pointer;
+  
+}
+
+.categories-menu ul {
+  margin-top: -20px;
+  background-color: #f5e7ca;  
+  width: 26.4%;  
+  list-style-type: none;
+  display: none;
+  /* border: 2px solid #756c59; */
+  padding: 10px;
+  text-align: center;
+  z-index: 999;
+  position:absolute;
+  line-height: 2.9em;
+ 
+  
+  
+}
+
+.categories-menu ul li {
+  border-bottom: 1px solid #756c59;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #756c59;
+}
+
+
+
+.categories-menu ul li a
+{
+  text-decoration: none;
+  color: #756c59;
+ 
+ 
+}
+
+.categories-menu ul li:hover{
+  background-color:  #dac399;
+}
+.categories-menu h3:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
+  color:  #efede9;
+} 
+.categories-menu ul:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
+}
+.categories-menu h3:hover + ul , .categories-menu ul:hover, .categories-menu ul li:hover{
+  display: block;
+  
+}
+
+
+/*----------Τέλος οι categories.html----------*/
+
 
 /*-------------Όλα τα παρακάτω αφορούν την φόρμα στο contact.html----------------*/
 
@@ -232,7 +366,12 @@ input[type="reset"]:hover,
 input[type="submit"]:hover {
   background-color: #d37f30; 
 }
+
+
+/*------Tέλος η φόρμα------*/
+
 /*----------------Όλα τα παρακάτω αφορούν το about.html------------------*/
+
 .main-about-us {
   background-color: #f9f9f9;
   padding: 20px;
@@ -260,24 +399,24 @@ input[type="submit"]:hover {
 
 
 /* Style the member article */
-#member {
+.member {
   flex: 1;
 }
 
 /* Style member headings */
-#member h2 {
+.member h2 {
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
 }
 
-#member h3 {
+.member h3 {
   font-size: 16px;
   color: #555;
   margin-bottom: 10px;
 }
 
-#member h4 {
+.member h4 {
   font-size: 14px;
   color: #777;
   line-height: 1.5;
@@ -289,36 +428,11 @@ input[type="submit"]:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-.main-categories{
-  display: flex;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: 60px;
-  width: 90%;
-  height: fit-content;
-  
-}
-.category{
-  flex: 33.33%;
-  padding: 10px;
-  
-}
-.category img{
-  border: #756c59 solid;
-  border-width: 3px;
-}
+/*-------------------------Τέλος το about.html----------------------------*/
 
-.categories-menu ul{
-  list-style-type: none;
 
-}
-#category-main{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 51%;
-}
 /*---------------------Όλα τα παρακάτω αφορούν την home-sales.html και car-sales.html------------------------*/
+
 /*Styles για την γραμμή*/
 .line {
   border: 0.1px solid #756c59;
@@ -448,7 +562,7 @@ input[type="submit"]:hover {
   border-width: 3px;
   margin-left: 55px ;
 }
-/*--------------------------------------*/
+
 .content a{
   text-decoration: none;
 }
@@ -462,140 +576,14 @@ input[type="submit"]:hover {
 .content a:visited{
   color: #924a0a;
 }
-/*---------Τα παρακάτω αφορούν το categories.html-------*/
 
 
-/* menu gia upokatigories kuriwn katigoriwn */
-
-.main-categories{
-  display: flex;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: 60px;
-  width: 90%;
-  height: fit-content;
-  
-}
-.category{
-  flex: 33.33%;
-  padding: 10px;
-  
-}
-.category img{
-  border: #756c59 solid;
-  border-width: 3px;
-}
+/*------------------Τέλος--------------------*/
 
 
-.categories-menu{
-  list-style: none;
-}
+/*------------------Τα παρακάτω είναι για το car-sales-citroen-c1-06-detailsls.html--------------------*/
 
-.categories-menu h3 {
- 
-  margin-left: 135px;
-  background-color: #dac399;
-  border: 2px solid #756c59; /* Add a border */
-  color: white;
-  padding: 3px 10px; /* Add padding for spacing between the text and border */
-  /* Additional styles for the h3 element */
-  display: inline-block; 
-  cursor: pointer;
-  
-}
-
-.categories-menu ul {
-  margin-top: -20px;
-  background-color: #f5e7ca;  
-  width: 26.4%;  
-  list-style-type: none;
-  display: none;
-  /* border: 2px solid #756c59; */
-  padding: 10px;
-  text-align: center;
-  z-index: 999;
-  position:absolute;
-  line-height: 2.9em;
- 
-  
-  
-}
-
-.categories-menu ul li {
-  border-bottom: 1px solid #756c59;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: #756c59;
-}
-
-
-
-.categories-menu ul li a
-{
-  text-decoration: none;
-  color: #756c59;
- 
- 
-}
-
-.categories-menu ul li:hover{
-  background-color:  #dac399;
-}
-.categories-menu h3:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
-  color:  #efede9;
-} 
-.categories-menu ul:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
-}
-.categories-menu h3:hover + ul , .categories-menu ul:hover, .categories-menu ul li:hover{
-  display: block;
-  
-}
-
-
-
-
-
-
-/* Style the content table */
-#content-table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
-  margin-left: 370px;
-
-}
-
-
-/* Style alternate rows with different background colors */
-#content-table tr:nth-child(even) {
-  background-color: #dac399;
-}
-
-/* Style the table cells */
-#content-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-/* Style the table cells in the first column (labels) */
-#content-table td:first-child {
-  font-weight: bold;
-}
-
-/* Add some spacing between the table rows */
-#content-table tr:hover {
-  background-color: #e0e0e0;
-}
-
-/* Add borders to the table cells */
-#content-table td {
-  border: 2px solid #756c59;
-}
-
-
-#main-citroen img {
+.main-citroen img {
   max-width: 450px; /* Set a maximum width for the image */
   border: 2px solid #666;
   border-radius: 10px;
@@ -605,13 +593,13 @@ input[type="submit"]:hover {
   transition: transform 0.3s; 
 }
 
-#main-citroen img:hover {
+.main-citroen img:hover {
   transform: scale(1.1); /* Increase the image size on hover */
 }
 
 
 
-#citroen-imgs img {
+.citroen-imgs img {
   max-width: 450px; /* Set a maximum width for the image */
   border: 2px solid #666;
   border-radius: 10px;
@@ -622,26 +610,26 @@ input[type="submit"]:hover {
   transition: transform 0.3s; 
 }
 
-#citroen-imgs img:hover {
+.citroen-imgs img:hover {
   transform: scale(1.1); /* Increase the image size on hover */
 }
 
-#citroen-details {
+.citroen-details {
 
   text-align: center;
 }
 
-#citroen-details h3 {
+.citroen-details h3 {
   font-size: 24px;
   color: #333;
   margin-top: 10px;
 }
 
-#citroen-details b {
+.citroen-details b {
   color: #835440; /* Style the price in a different color */
 }
 
-#citroen-details a {
+.citroen-details a {
   display: inline-block;
   background-color: #835440;
   color: white;
@@ -652,21 +640,55 @@ input[type="submit"]:hover {
   transition: background-color 0.3s;
 }
 
-#citroen-details a:hover {
+.citroen-details a:hover {
   background-color: #ca886b; /* Change the background color on hover */
 }
 
-#citroen-details p {
+.citroen-details p {
   font-size: 18px;
   color: #444;
   margin-top: 20px;
 }
 
+/* Style the content table */
+.content-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  margin-left: 370px;
 
-#citroen-details p small {
+}
+
+/* Style alternate rows with different background colors */
+.content-table tr:nth-child(even) {
+  background-color: #dac399;
+}
+
+/* Style the table cells */
+.content-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Style the table cells in the first column (labels) */
+.content-table td:first-child {
+  font-weight: bold;
+}
+
+/* Add some spacing between the table rows */
+.content-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Add borders to the table cells */
+.content-table td {
+  border: 2px solid #756c59;
+}
+
+.citroen-details p small {
   color: #525252;
 }
 
-#citroen-details p small b {
+.citroen-details p small b {
   color: #835440; /* Style the numbers in a different color */
 }
