@@ -173,82 +173,64 @@ body{
 
 /*---------Τα παρακάτω αφορούν το categories.html-------*/
 
-/* menu gia upokatigories kuriwn katigoriwn */
-
-.main-categories{
-  display: flex;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: 60px;
-  width: 90%;
-  height: fit-content;
-  
-}
-σ
-.category{
-  flex: 33.33%;
-  padding: 10px;
-  
-}
-.category img{
-  border: #756c59 solid;
-  border-width: 3px;
-}
-
-.categories-menu ul{
-  list-style-type: none;
-
-}
-
+/*το κείμενο της σελίδας στοιχισμένο στο κέντρο*/
 #category-main{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 51%;
 }
+
+/* μενού για υποκατηγορίες*/
+
+.main-categories{
+  display: flex;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: 68px;
+  width: 90%;
+}
+
 .category{
   flex: 33.33%;
   padding: 10px;
   
 }
+
 .category img{
   border: #756c59 solid;
   border-width: 3px;
 }
 
-
 .categories-menu{
   list-style: none;
 }
 
+/*όταν κάνω hover την υποκατηγορία(h3) εμφανίζεται το μενού*/
 .categories-menu h3 {
- 
   margin-left: 135px;
   background-color: #dac399;
-  border: 2px solid #756c59; /* Add a border */
+  border: 2px solid #756c59; 
   color: white;
-  padding: 3px 10px; /* Add padding for spacing between the text and border */
-  /* Additional styles for the h3 element */
+  padding: 3px 10px;
   display: inline-block; 
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
 
+/*Τα παρακάτω αφορούν το υπομενού της κάθε κατηγορίας*/
+
+/* Στοιχεία του υπομενού */
 .categories-menu ul {
   margin-top: -20px;
   background-color: #f5e7ca;  
   width: 26.4%;  
   list-style-type: none;
   display: none;
-  /* border: 2px solid #756c59; */
   padding: 10px;
   text-align: center;
   z-index: 999;
   position:absolute;
-  line-height: 2.9em;
- 
-  
-  
+  line-height: 2.9em;  
 }
 
 .categories-menu ul li {
@@ -258,34 +240,87 @@ body{
   color: #756c59;
 }
 
-
+/* Όταν το κάνω χόβερ να αλλάζει αλλάζει το ντισπλει και άλλα στυλιστικά*/
 
 .categories-menu ul li a
 {
   text-decoration: none;
   color: #756c59;
- 
- 
 }
 
 .categories-menu ul li:hover{
   background-color:  #dac399;
 }
+
 .categories-menu h3:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
   color:  #efede9;
 } 
+
 .categories-menu ul:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Extend the shadow by increasing the spread radius to 20 pixels */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
+
 .categories-menu h3:hover + ul , .categories-menu ul:hover, .categories-menu ul li:hover{
   display: block;
   
 }
 
-
 /*----------Τέλος οι categories.html----------*/
 
+/*----------------Όλα τα παρακάτω αφορούν το about.html------------------*/
+
+.main-about-us {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Στυλ για το section */
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Στυλ για εικόνες */
+.team-member img {
+  border: 2px solid white;
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Τα παρακάτω είναι στυλ για τα κείμενα της σελίδας */
+.member h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.member h4 {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* ζοομ όταν γίνεται χόβερ στην φώτο */
+.team-member img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*-------------------------Τέλος το about.html----------------------------*/
 
 /*-------------Όλα τα παρακάτω αφορούν την φόρμα στο contact.html----------------*/
 
@@ -311,6 +346,7 @@ body{
   color:#000000;
   margin-bottom: -15px;
 }
+
 /*----Όλα τα παρακάτω αφορούν την φόρμα και περιέχονται styles για κάθε στοιχείο της----*/
 .form {
   text-align: left;
@@ -329,6 +365,7 @@ label {
   margin-top: 10px; 
 }
 
+/* Σταιλ για το κάθε στοιχείο της φόρμας */
 input[type="text"],
 input[type="email"],
 input[type="phone"],
@@ -370,67 +407,6 @@ input[type="submit"]:hover {
 
 /*------Tέλος η φόρμα------*/
 
-/*----------------Όλα τα παρακάτω αφορούν το about.html------------------*/
-
-.main-about-us {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Style the team member section */
-.team-member {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  text-align: left;
-}
-
-/* Style the team member image */
-.team-member img {
-  border: 2px solid white;
-  width: 250px;
-  height: 250px;
-  margin-right: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Style the member article */
-.member {
-  flex: 1;
-}
-
-/* Style member headings */
-.member h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.member h3 {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.member h4 {
-  font-size: 14px;
-  color: #777;
-  line-height: 1.5;
-}
-
-/* Add hover effect to team member images */
-.team-member img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-/*-------------------------Τέλος το about.html----------------------------*/
-
-
 /*---------------------Όλα τα παρακάτω αφορούν την home-sales.html και car-sales.html------------------------*/
 
 /*Styles για την γραμμή*/
@@ -468,6 +444,7 @@ input[type="submit"]:hover {
   background: #756c59;
 }
 /*-------- Όλα τα παρακάτω αφορούν το pop-up window της κάθε αγγελίας -----------*/
+
 /*Το παράθυρο που περιβάλλει το op-up window*/
 .overlay {
   position: fixed;
@@ -578,29 +555,29 @@ input[type="submit"]:hover {
 }
 
 
-/*------------------Τέλος--------------------*/
-
+/*------------------Τέλος home-sales.html και car-sales.html--------------------*/
 
 /*------------------Τα παρακάτω είναι για το car-sales-citroen-c1-06-detailsls.html--------------------*/
 
+/*Κύρια φώτο της σελίδας στο κέντρο*/
 .main-citroen img {
-  max-width: 450px; /* Set a maximum width for the image */
+  max-width: 650px; 
   border: 2px solid #666;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #888;
-  display: block; /* Center the image horizontally */
+  display: block; 
   margin: 0 auto;
   transition: transform 0.3s; 
 }
 
+/*Μεγενθήνεται με χόβερ*/
 .main-citroen img:hover {
-  transform: scale(1.1); /* Increase the image size on hover */
+  transform: scale(1.1); 
 }
 
-
-
+/*Ομοίως για τις υπόλοιπες φώτο*/
 .citroen-imgs img {
-  max-width: 450px; /* Set a maximum width for the image */
+  max-width: 450px; 
   border: 2px solid #666;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #888;
@@ -614,8 +591,8 @@ input[type="submit"]:hover {
   transform: scale(1.1); /* Increase the image size on hover */
 }
 
+/*Τα παρακάτω αφορούν τις πληροφορίες της αγγελίας*/
 .citroen-details {
-
   text-align: center;
 }
 
@@ -626,11 +603,11 @@ input[type="submit"]:hover {
 }
 
 .citroen-details b {
-  color: #835440; /* Style the price in a different color */
+  color: #835440; 
 }
 
+/* Το κουμπί για επιστροφή στις αγγελίες */
 .citroen-details a {
-  display: inline-block;
   background-color: #835440;
   color: white;
   padding: 10px 20px;
@@ -641,7 +618,7 @@ input[type="submit"]:hover {
 }
 
 .citroen-details a:hover {
-  background-color: #ca886b; /* Change the background color on hover */
+  background-color: #ca886b; 
 }
 
 .citroen-details p {
@@ -650,8 +627,16 @@ input[type="submit"]:hover {
   margin-top: 20px;
 }
 
-/* Style the content table */
-.content-table {
+.citroen-details p small {
+  color: #525252;
+}
+
+.citroen-details p small b {
+  color: #835440; 
+}
+
+/* Τα παρακάτω αφορούν τον πίνακα με τα χαρακτηριστικά του αμαξιού */
+#content-table {
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
@@ -659,36 +644,28 @@ input[type="submit"]:hover {
 
 }
 
-/* Style alternate rows with different background colors */
-.content-table tr:nth-child(even) {
+/* Ανα μια γραμμή να έχει διαφορετικό χρώμα εναλλάξ */
+#content-table tr:nth-child(even) {
   background-color: #dac399;
 }
 
-/* Style the table cells */
-.content-table td {
+
+#content-table td {
   padding: 10px;
   border: 1px solid #ddd;
 }
 
-/* Style the table cells in the first column (labels) */
-.content-table td:first-child {
+/* Τα αριστερά να είναι bold */
+#content-table td:first-child {
   font-weight: bold;
 }
 
-/* Add some spacing between the table rows */
-.content-table tr:hover {
+#content-table tr:hover {
   background-color: #e0e0e0;
 }
 
-/* Add borders to the table cells */
-.content-table td {
+#content-table td {
   border: 2px solid #756c59;
 }
 
-.citroen-details p small {
-  color: #525252;
-}
-
-.citroen-details p small b {
-  color: #835440; /* Style the numbers in a different color */
-}
+/*-----------------------------Τέλος car-sales-citroen-c1-06-detailsls.html------------------------------------------*/
