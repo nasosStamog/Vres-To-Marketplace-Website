@@ -14,7 +14,7 @@ body{
   /* κενό που υπάρχει από γραμμή σε γραμμή κειμένου */
 }
 
-#page{
+.page{
   width: 80%;
   margin: 0 auto; 
   position: relative;
@@ -35,9 +35,9 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  /* Βοητητική κλάση για κεντρικ΄ή στοίχιση φωτογραφιών */
+  /* Βοητητική κλάση για κεντρικ΄ή στοίχιση φωτογραφιών και div element */
 }
-#banner-logo img{
+.banner-logo img{
   display: block;
   width: 59%;
   margin-left: 20%;
@@ -48,12 +48,13 @@ body{
   padding: 0%;
    /* Μέθοδος "κεντραρίσματος" του logo */
 }
+/*------------- Όλα τα παρακάτω αφορούν το navigation bar --------------------------*/
+
+/*Στοίχιση του logo αριστερά στο μενού*/
 #logo {
   float: left;
   
 }
-/* Όλα τα παρακάτω αφορούν το navigation bar */
-
 .menu-nav {
   margin-top: 0.5%;
   background-color: #dac399;
@@ -121,7 +122,7 @@ background-color: transparent;
 }
 /*Τέλος του μενού*/
 
-#main-title{
+.main-title{
   text-align: center;
   color: #724734;
   font-size: 180%;
@@ -135,40 +136,63 @@ background-color: transparent;
   /* Text Container το οποίο περιορίζει στην ουσία το κείμενο απ'το να ακουμπάει στα άκρα του border/κουτιού */
   
 }
-
-#main-footer {
+/*-----------Όλα τα παρακάτω αφορύν το footer*-----------*/
+.main-footer {
   background-color: #000000;
   padding-bottom: 3px;
   text-align:center;
   color: #dac399;
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
-#main-footer a:hover{
+.main-footer a:hover{
   color: #edeae5;
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
-#main-footer a{
+.main-footer a{
   color: #dac399;
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
 
-/*Όλα τα παρακάτω αφορούν την φόρμα στο contact.html*/
+/*-------------Όλα τα παρακάτω αφορούν την φόρμα στο contact.html----------------*/
 
-#form {
-  text-align: left; /* Align form content to the left */
-  flex: 2; /* Occupy two-thirds of the available space */
+/*Container που περιέχει την φόρμα και styles για την θέση του*/
+.form-container {
+  display: flex; 
+  justify-content: space-between; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 10px;
+}
+/*Styles για τα γρ΄αμματα της φόρμας*/
+.form-text {
+  flex: 1; 
+  font-size: 30px;
+  line-height: 1.6em;
+  color: #724734;
+}
+/*Container για τον τίτλο και την εξήγηση της φόρμας στον χρήστη*/
+.support-container{
+  font-size: 15px;
+  line-height: 1.3em;
+  color:#000000;
+  margin-bottom: -15px;
+}
+/*----Όλα τα παρακάτω αφορούν την φόρμα και περιέχονται styles για κάθε στοιχείο της----*/
+.form {
+  text-align: left;
+  flex: 2; 
   padding: 20px;
 }
 
 form {
-  max-width: 400px; /* Set a maximum width for the form */
-  margin: 0 auto; /* Center the form horizontally */
+  max-width: 400px; 
+  margin: 0 auto; 
 }
 
 label {
-  display: block; /* Display labels on a new line */
-  font-weight: bold; /* Make labels bold */
-  margin-top: 10px; /* Add spacing above labels */
+  display: block; 
+  font-weight: bold; 
+  margin-top: 10px; 
 }
 
 input[type="text"],
@@ -176,58 +200,37 @@ input[type="email"],
 input[type="phone"],
 input[type="ID"],
 textarea {
-  width: 100%; /* Make input fields and textarea full width */
-  padding: 10px; /* Add padding to input fields and textarea */
-  margin-bottom: 15px; /* Add spacing below input fields and textarea */
-  border: 2px solid #ccc; /* Add a border */
-  border-radius: 5px; /* Round the corners */
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px; 
 }
 
 input[type="message"],
 textarea {
-  width: 100%; /* Make input fields and textarea full width */
-  padding: 10px; /* Add padding to input fields and textarea */
-  margin-bottom: 15px; /* Add spacing below input fields and textarea */
-  border: 2px solid #ccc; /* Add a border */
-  border-radius: 5px; /* Round the corners */
-  height: 150px; /* Adjust the height of the textarea */
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 15px;
+  border: 2px solid #ccc; 
+  border-radius: 5px; 
+  height: 150px; 
 }
 
 input[type="reset"],
 input[type="submit"] {
-  background-color: #a95d12; /* Background color for buttons */
-  color: #fff; /* Text color for buttons */
-  padding: 10px 20px; /* Add padding to buttons */
-  border: none; /* Remove the button border */
-  border-radius: 5px; /* Round the corners */
-  cursor: pointer; /* Show a hand cursor on hover */
-  margin-right: 10px; /* Add spacing between buttons */
+  background-color: #724734; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-right: 10px; 
 }
 
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #d37f30; /* Change button color on hover */
-}
-#form-container {
-  display: flex; /* Use flexbox to arrange elements side by side */
-  justify-content: space-between; /* Separate text and form with space */
-  max-width: 1000px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 10px;
-}
-
-#form-text {
-  flex: 1; /* Occupy one-third of the available space */
-  font-size: 30px;
-  line-height: 1.6em;
-  color: #a95d12;
-}
-
-#support-container{
-  font-size: 15px;
-  line-height: 1.3em;
-  color:#000000;
-  margin-bottom: -15px;
+  background-color: #d37f30; 
 }
 /*----------------Όλα τα παρακάτω αφορούν το about.html------------------*/
 .main-about-us {
@@ -315,14 +318,14 @@ input[type="submit"]:hover {
   margin-right: auto;
   width: 51%;
 }
-/*---------------------Όλα τα παρακάτω αφορούν την home-sales.html------------------------*/
-
+/*---------------------Όλα τα παρακάτω αφορούν την home-sales.html και car-sales.html------------------------*/
+/*Styles για την γραμμή*/
 .line {
   border: 0.1px solid #756c59;
   margin-top: -20px;
   margin-bottom: 10px;
 }
-
+/*Styles για τις αγγελίες*/
 .listings {
   overflow: hidden;
   justify-content: space-around;
@@ -335,7 +338,7 @@ input[type="submit"]:hover {
   margin-top: -10px;
 }
 
-
+/*Styles για το κουμπί που δίνει περισσότερες πληροφορίες για την αγγελία*/
 .button {
   font-size: 1em;
   padding: 5px;
@@ -350,7 +353,8 @@ input[type="submit"]:hover {
 .button:hover {
   background: #756c59;
 }
-
+/*-------- Όλα τα παρακάτω αφορούν το pop-up window της κάθε αγγελίας -----------*/
+/*Το παράθυρο που περιβάλλει το op-up window*/
 .overlay {
   position: fixed;
   top: 0;
@@ -386,7 +390,7 @@ input[type="submit"]:hover {
   margin-right: auto;
   width: 100%;
 }
-
+/*Το κουμπί που κλείνει το παράθυρο της αγγελίας*/
 .popup .close {
   position: absolute;
   top: 8px;
@@ -400,6 +404,7 @@ input[type="submit"]:hover {
 .popup .close:hover {
   color: #756c59;
 }
+/*Τα περιεχόμενα του pop-up window*/
 .popup .content {
   overflow-y: auto ;
   max-height:550px;
@@ -410,8 +415,7 @@ input[type="submit"]:hover {
   border-width: 3px;
   
 }
-
-/*----------Εικόνες Ακινήτων-----------*/
+/*Style για στοίχιση του κουμπιού στο κέντρο της εικόνας*/
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -422,7 +426,14 @@ input[type="submit"]:hover {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
+/*Styles για το container που περιέχει την φωτογραφία κάθε αγγελίας στην οθόνη της κάθε κατηγορίας*/
+.container {
+  position: relative;
+  float: left;
+  width: 48%;
+  padding: 5px;
+  
+}
 .container:hover .property-image {
   opacity: 0.3;
   
@@ -431,18 +442,7 @@ input[type="submit"]:hover {
 .container:hover .middle {
   opacity: 1;
 }
-.container {
-  position: relative;
-  float: left;
-  width: 48%;
-  padding: 5px;
-  
-}
-@media (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
-}
+/*Styles για τις εικόνες των αγγελιών*/
 .property-image{
   border: #756c59 solid;
   border-width: 3px;
@@ -501,7 +501,6 @@ input[type="submit"]:hover {
   /* Additional styles for the h3 element */
   display: inline-block; 
   cursor: pointer;
-  
   
 }
 
