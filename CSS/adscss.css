@@ -88,8 +88,7 @@ body{
 
  /* Eυθυγράμμιση αντικειμένων του μενού/λίστας */
 .menu-nav ul li {
-  display: inline;
-  display: inline-block;
+  display: inline-flex;
   padding-top: 5px;
   position: relative;
 }
