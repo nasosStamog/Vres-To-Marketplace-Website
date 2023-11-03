@@ -23,12 +23,22 @@ body{
 
 /* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
 .box-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr auto 0.1fr;
+  grid-template-areas: 
+    "nav"
+    "main"
+    "footer" 
+    ;
   background-color: #fff5e7;
   border: #756c59 solid;
   border-width: 5px;
   padding: 0px;
 }
-
+.main{
+  grid-area: main;
+}
 /* Kλάση για κεντρική στοίχιση φωτογραφιών και div element */
 .center {
   display: block;
@@ -63,7 +73,8 @@ body{
   background-color: #dac399;
   float: right;
   width: 100%;
-  color:white;  
+  color:white; 
+  grid-area: nav;
 }
 
 /* Στυλ αντικειμένων μενού, font, μέγεθος και bold */
@@ -140,7 +151,7 @@ body{
 .main-title{
   text-align: center;
   color: #724734;
-  font-size: 180%;
+  font-size: 40px;
   margin-top: 5px;
 }
 
@@ -148,7 +159,7 @@ body{
 .main-info{
   margin-left: 10px;
   margin-right: 10px;
-  padding-top: 0px;  
+  margin-top: -40px;
 }
 
 /*-----------Όλα τα παρακάτω αφορύν το footer-----------*/
@@ -158,6 +169,7 @@ body{
   padding-bottom: 3px;
   text-align:center;
   color: #dac399;
+  grid-area: footer;
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
 .main-footer a:hover{
@@ -168,7 +180,6 @@ body{
   color: #dac399;
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
-
 /*----------Τέλος το footer----------*/
 
 /*---------Τα παρακάτω αφορούν το categories.html-------*/
@@ -204,6 +215,7 @@ body{
 
 .categories-menu{
   list-style: none;
+  margin-bottom: 210px;
 }
 
 /*όταν κάνω hover την υποκατηγορία(h3) εμφανίζεται το μενού*/
@@ -271,10 +283,7 @@ body{
 /*----------------Όλα τα παρακάτω αφορούν το about.html------------------*/
 
 .main-about-us {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color:  #fff5e7;
   text-align: center;
 }
 
