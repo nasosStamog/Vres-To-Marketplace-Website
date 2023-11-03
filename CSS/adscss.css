@@ -152,6 +152,7 @@ body{
   color: #724734;
   font-size: 40px;
   margin-top: 5px;
+  line-height: 1em;
 }
 
 /* Text Container το οποίο περιορίζει στην ουσία το κείμενο απ'το να ακουμπάει στα άκρα του border/κουτιού */
