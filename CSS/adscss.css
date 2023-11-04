@@ -369,7 +369,7 @@ form {
 }
 
 label {
-  display: block; 
+  display: flex;
   font-weight: bold; 
   margin-top: 10px; 
 }
