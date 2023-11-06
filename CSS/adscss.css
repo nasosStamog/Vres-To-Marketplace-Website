@@ -24,12 +24,12 @@ body{
 /* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
 .box-1{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.1fr auto 0.1fr;
   grid-template-areas: 
-    "nav"
-    "main"
-    "footer" 
+    "nav nav nav"
+    "main main main"
+    "footer footer footer" 
     ;
   background-color: #fff5e7;
   border: #756c59 solid;
