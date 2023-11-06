@@ -24,7 +24,7 @@ body{
 /* Στην ουσία είναι το "κουτί" που περιβάλλει όλο το περιεχόμενο της ιστοσελίδας */
 .box-1{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   grid-template-rows: 0.1fr auto 0.1fr;
   grid-template-areas: 
     "nav nav nav"
@@ -290,11 +290,24 @@ body{
 /* Στυλ για το section */
 .team-member {
   display: flex;
-  align-items: center;
   margin-bottom: 40px;
   text-align: left;
 }
-
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .team-member{
+    flex-wrap: wrap;
+  }
+  .team-member img{
+    margin-left: 100px;
+  }
+  .team-member h2{
+    text-align: center;
+  }
+  .team-member h3{
+    text-align: center;
+  }
+}
 /* Στυλ για εικόνες */
 .team-member img {
   border: 2px solid white;
@@ -336,6 +349,7 @@ body{
 /*Container που περιέχει την φόρμα και styles για την θέση του*/
 .form-container {
   display: flex; 
+  flex-wrap: wrap;
   justify-content: space-between; 
   max-width: 1000px; 
   margin: 0 auto; 
