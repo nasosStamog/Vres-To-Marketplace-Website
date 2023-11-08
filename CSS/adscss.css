@@ -36,10 +36,26 @@ body{
   border-width: 5px;
   padding: 0px;
 }
-
+/*Grids for Mobile Phones*/
 @media only screen and (max-width: 425px) {
   .page{
     width: 95%;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer" 
+    ;
+  }
+}
+/*Grids for Tablet and small Laptops*/
+@media only screen and (max-width: 1024px) and (min-width: 426px) {
+  .page{
+    width: 95%;
+    grid-template-areas: 
+    "nav nav"
+    "main main"
+    "footer footer" 
+    ;
   }
 }
 
