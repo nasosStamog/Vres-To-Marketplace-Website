@@ -37,7 +37,7 @@ body{
   padding: 0px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .page{
     width: 95%;
   }
@@ -74,7 +74,7 @@ body{
   
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   #logo {
     width: 30%;
     height: 30%;
@@ -92,8 +92,6 @@ body{
     text-align: center;
   }
   
-
-  /**/
 
 }
 
@@ -180,7 +178,7 @@ body{
   line-height: 1em;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .main-title{
     font-size: 25px;
   }
@@ -195,7 +193,7 @@ body{
   
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .main-info{
     font-size: 14px;
     text-align: justify;
@@ -222,7 +220,7 @@ body{
   border: #756c59 solid;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .banner-logo img{
     max-width: 100%;
   } 
@@ -247,7 +245,7 @@ body{
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .main-footer {
     font-size: 10px;
   }
@@ -387,7 +385,8 @@ body{
   margin-bottom: 40px;
   text-align: left;
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 425px) {
   /* For mobile phones: */
   .team-member{
     flex-wrap: wrap;
@@ -401,14 +400,17 @@ body{
   .team-member h3{
     text-align: center;
   }
+  .team-member img{
+    max-width: 50%;
+  }
   .team-member img:hover{
     pointer-events: none;
   }
 }
+
 /* Στυλ για εικόνες */
 .team-member img {
   border: 2px solid white;
-  width: 250px;
   height: 250px;
   margin-right: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -468,9 +470,63 @@ body{
 }
 
 /*----Όλα τα παρακάτω αφορούν την φόρμα και περιέχονται styles για κάθε στοιχείο της----*/
+@media only screen and (max-width: 425px) {
+  /* For mobile phones: */
+  #map{
+    max-width: 220px;
+    max-height: 190px;
+    
+  }
+  .form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  .form-text{
+    text-align: center;
+    font-size: 20px;
+  }
+  .support-container{
+    font-size: 13px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"],
+  input[type="ID"],
+  textarea {
+    margin-left: -10px;
+  }
+  label{
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 426px)  {
+  /* For mobile phones: */
+  #map{
+    max-width: 100%;
+  }
+  .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .form-text{
+      text-align: center;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    input[type="ID"],
+    textarea {
+      margin-left: -10px;
+    }
+
+  }
+
 .form {
-  text-align: left;
-  flex: 2; 
+  text-align: center;
   padding: 20px;
 }
 
@@ -496,6 +552,7 @@ textarea {
   margin-bottom: 15px;
   border: 2px solid #ccc;
   border-radius: 5px; 
+  margin-right: auto;
 }
 
 input[type="message"],
@@ -505,7 +562,8 @@ textarea {
   margin-bottom: 15px;
   border: 2px solid #ccc; 
   border-radius: 5px; 
-  height: 150px; 
+  height: 150px;
+  resize: none;
 }
 
 input[type="reset"],
