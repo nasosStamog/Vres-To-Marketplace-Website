@@ -709,15 +709,16 @@ input[type="submit"]:hover {
   padding: 20px;
   background: #fff;
   border-radius: 8px;
-  width: 60%;
+  
   position: relative;
   transition: all 3s ease-in-out;
+  max-width: 720px;
 }
 
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: myfont, Georgia, serif;
   display: block;
   margin-left: 0;
   margin-right: auto;
@@ -757,6 +758,7 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
+  max-width: 400px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -767,7 +769,6 @@ input[type="submit"]:hover {
 .container {
   position: relative;
   text-align: center;
-  
   padding: 5px;
   
 }
@@ -803,6 +804,50 @@ input[type="submit"]:hover {
 }
 .content a:visited{
   color: #924a0a;
+}
+
+
+@media only screen and (max-width: 425px) {
+  /* For mobile phones: */
+  .content{
+    font-size: 15px;
+  }
+  .popup h2{
+    font-size: 25px;
+  }
+  .content img{
+    width: 80%;
+  }
+  .popup{
+    max-width: 250px;
+  }
+  .container .middle {
+    transition: none;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container .middle {
+    transition: none;
+    font-size: 5px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 426px)  {
+  /* For tablets and small laptops: */
+  .content{
+    font-size: 20px;
+  }
+  .popup h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .content img{
+    width: 80%;
+  }
+  .popup {
+    max-width: 600px;
+}
 }
 
 
