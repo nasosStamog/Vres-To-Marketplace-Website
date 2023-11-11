@@ -265,6 +265,14 @@ body{
   line-height: 1em;
 }
 
+@media only screen and (max-width: 825px) {
+  .main-title{
+    font-size: 30px;
+  }
+ 
+}
+
+
 @media only screen and (max-width: 425px) {
   .main-title{
     font-size: 25px;
@@ -1021,6 +1029,10 @@ input[type="submit"]:hover {
   align-self: center; 
   transition: transform 0.3s; 
 }
+#citroen-main-photo {
+  width: 60%;
+  height: 60%;
+}
 
 @media only screen and (max-width: 1624px) and (min-width: 1024px)  {
   .citroen-imgs {
@@ -1028,7 +1040,9 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr 1fr;
     justify-content: center; 
   }
-
+  
+  
+ 
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 800px)  {
@@ -1040,7 +1054,39 @@ input[type="submit"]:hover {
   .citroen-imgs img {
     max-width: 300px; 
   }
+  .main-citroen{
+    font-size: 15px;
+  }
 }
+
+@media only screen and (max-width: 800px) and (min-width: 550px)  {
+  .citroen-imgs {
+    display: grid; /* Center the image horizontally */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+  }
+  .citroen-imgs img {
+    max-width: 200px; 
+  }
+  .main-citroen{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 550px)  {
+  .citroen-details {
+    font-size: 11px;
+  }
+  .citroen-imgs {
+    display: flex; /* Center the image horizontally */
+    flex-direction: column;
+    
+  }
+  .citroen-imgs img {
+    width: 80%; 
+  }
+}
+
 
 .citroen-imgs img:hover {
   transform: scale(1.1); /* Increase the image size on hover */
@@ -1105,6 +1151,11 @@ input[type="submit"]:hover {
 
 }
 
+@media only screen and (max-width: 690px)  {
+  #content-table{
+    width: 90%;
+  }
+}
 /* Ανα μια γραμμή να έχει διαφορετικό χρώμα εναλλάξ */
 #content-table tr:nth-child(even) {
   background-color: #dac399;
