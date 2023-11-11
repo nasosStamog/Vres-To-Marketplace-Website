@@ -1034,60 +1034,6 @@ input[type="submit"]:hover {
   height: 60%;
 }
 
-@media only screen and (max-width: 1624px) and (min-width: 1024px)  {
-  .citroen-imgs {
-    display: grid; /* Center the image horizontally */
-    grid-template-columns: 1fr 1fr;
-    justify-content: center; 
-  }
-  
-  
- 
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 800px)  {
-  .citroen-imgs {
-    display: grid; /* Center the image horizontally */
-    grid-template-columns: 1fr 1fr;
-    justify-content: center; 
-  }
-  .citroen-imgs img {
-    max-width: 300px; 
-  }
-  .main-citroen{
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 800px) and (min-width: 550px)  {
-  .citroen-imgs {
-    display: grid; /* Center the image horizontally */
-    grid-template-columns: 1fr 1fr;
-    justify-content: center; 
-  }
-  .citroen-imgs img {
-    max-width: 200px; 
-  }
-  .main-citroen{
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 550px)  {
-  .citroen-details {
-    font-size: 11px;
-  }
-  .citroen-imgs {
-    display: flex; /* Center the image horizontally */
-    flex-direction: column;
-    
-  }
-  .citroen-imgs img {
-    width: 80%; 
-  }
-}
-
-
 .citroen-imgs img:hover {
   transform: scale(1.1); /* Increase the image size on hover */
 }
@@ -1150,12 +1096,6 @@ input[type="submit"]:hover {
  
 
 }
-
-@media only screen and (max-width: 690px)  {
-  #content-table{
-    width: 90%;
-  }
-}
 /* Ανα μια γραμμή να έχει διαφορετικό χρώμα εναλλάξ */
 #content-table tr:nth-child(even) {
   background-color: #dac399;
@@ -1180,4 +1120,78 @@ input[type="submit"]:hover {
   border: 2px solid #756c59;
 }
 
+@media only screen and (max-width: 690px)  {
+  #content-table{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1624px) and (min-width: 1024px)  {
+  .citroen-imgs {
+    display: grid; /* Center the image horizontally */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+  }
+  
+  
+ 
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 800px)  {
+  .citroen-imgs {
+    display: grid; /* Center the image horizontally */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+  }
+  .citroen-imgs img {
+    max-width: 300px; 
+  }
+  .main-citroen{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 550px)  {
+  .citroen-imgs {
+    display: grid; /* Center the image horizontally */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+  }
+  .citroen-imgs img {
+    max-width: 200px; 
+  }
+  .main-citroen{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 550px)  {
+  .citroen-details {
+    font-size: 9px;
+  }
+  .citroen-imgs {
+    display: flex; /* Center the image horizontally */
+    flex-direction: column;
+    
+  }
+  .citroen-imgs img {
+    width: 80%; 
+  }
+}
+
+@media only screen and (max-width: 392px)  {
+  .citroen-details {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 392px)  {
+  .citroen-details {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 324px)  {
+  .citroen-details {
+    font-size: 7px;
+  }
+}
 /*-----------------------------Τέλος car-sales-citroen-c1-06-detailsls.html------------------------------------------*/
