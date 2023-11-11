@@ -166,24 +166,66 @@ body{
   transition: transform 0.3s ease-in-out; /* Ομαλό transition */
 }
 
-
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1060px) {
   #logo {
     width: 30%;
     height: 60%;
     margin-top: 10px;
   }
+  .menu-nav ul {
+    
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-nav ul li {
+    font-size: 20px; /* Set the font size to make the letters smaller */
+    text-align: center;
+    margin-top: 10px;
+  }
+} 
+
+@media only screen and (max-width: 674px) {
+  #logo {
+    width: 30%;
+    height: 50%;
+    margin-top: 30px;
+  }
   
   .menu-nav ul {
     
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+   
+  }
+  .menu-nav ul li {
+    font-size: 25px; /* Set the font size to make the letters smaller */
+    
+  }
+  
+
+  /**/
+
+} 
+
+@media only screen and (max-width: 470px) {
+  #logo {
+    width: 30%;
+    height: 30%;
+    margin-top: 30px;
+  }
+  
+  .menu-nav ul {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
    
   }
   .menu-nav ul li {
     font-size: 15px; /* Set the font size to make the letters smaller */
-    text-align: center;
+    
   }
   
 
@@ -290,6 +332,12 @@ body{
   /* Στυλ για το footer ( κάτω-κάτω μέρος της σελίδας ) καθώς επίσης χρ΄ωμα και κεντράρισμα κειμένου που βρίσκεται μέσα */
 }
 
+@media only screen and (max-width: 1024px) {
+  .main-footer {
+    font-size: 13px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .main-footer {
     font-size: 10px;
@@ -316,11 +364,7 @@ body{
 
 
 .category{
-  
-  
-  
   text-align: center;
-  
   justify-content: center;
   align-items: center;
 }
@@ -339,7 +383,11 @@ body{
   justify-content: center; /* Center horizontally within the parent */
   align-items: center; /* Center vertically within the parent */
   position: relative;
+  flex-direction: row;
+  
 }
+
+
 /*όταν κάνω hover την υποκατηγορία(h3) εμφανίζεται το μενού*/
 .categories-menu h3 {
   
@@ -352,6 +400,54 @@ body{
   
 }
 
+@media only screen and (max-width: 1600px) {
+ 
+  .main-categories{
+    display: flex;
+    flex-direction: row;
+  }
+  .category img{
+    height: 35%;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+ 
+  .main-categories{
+    display: flex;
+    flex-direction: column;
+  }
+  .category img{
+    height: 35%;
+    width: 60%;
+  }
+  .categories-menu h3 {
+  
+    
+    border: 2px solid #dac399;   
+    
+  }
+}
+
+@media only screen and (max-width: 425px) {
+ 
+  .main-categories{
+    display: flex;
+    flex-direction: column;
+  }
+  .category img{
+    height: 50%;
+    width: 50%;
+  }
+  .categories-menu h3 {
+  
+    
+    border: 2px solid #dac399;   
+    
+  }
+  
+}
 /*Τα παρακάτω αφορούν το υπομενού της κάθε κατηγορίας*/
 
 /* Στοιχεία του υπομενού */
@@ -378,6 +474,44 @@ body{
   
 }
 
+@media only screen and (max-width: 1440px) {
+  .categories-menu ul li {
+    font-size: 15px;
+    
+  }
+}
+@media only screen and (max-width: 768px) {
+  .categories-menu ul li {
+    font-size: 11px;
+    
+  }
+}
+@media only screen and (max-width: 678px) {
+  .categories-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 2px solid #756c59; 
+  }
+  .categories-menu ul li {
+    font-size: 15px;
+    line-height: 2.9em;
+    
+  }
+}
+@media only screen and (max-width: 425px) {
+  .categories-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 2px solid #756c59; 
+  }
+  .categories-menu ul li {
+    font-size: 12px;
+    line-height: 2.9em;
+    
+  }
+}
 /* Όταν το κάνω χόβερ να αλλάζει αλλάζει το ντισπλει και άλλα στυλιστικά*/
 
 .categories-menu ul li a
@@ -886,6 +1020,26 @@ input[type="submit"]:hover {
   justify-self: center; /* Center the image horizontally within its grid cell */
   align-self: center; 
   transition: transform 0.3s; 
+}
+
+@media only screen and (max-width: 1624px) and (min-width: 1024px)  {
+  .citroen-imgs {
+    display: grid; /* Center the image horizontally */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+  }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 800px)  {
+  .citroen-imgs {
+    display: grid; /* Center the image horizontally */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+  }
+  .citroen-imgs img {
+    max-width: 300px; 
+  }
 }
 
 .citroen-imgs img:hover {
