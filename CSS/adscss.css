@@ -166,6 +166,17 @@ body{
   transition: transform 0.3s ease-in-out; /* Ομαλό transition */
 }
 
+/* Τέλος για hover*/
+
+/* Για να δείξει στον χρήστη ποιο αντικείμενο του μενού έχει επιλέξει (ποιο είναι active) */
+.menu-nav a#act-menu-nav {
+  color: #efede9;
+  width: 90%;
+  position: relative; 
+  text-align: center;
+  background-color: #a19171;
+}
+
 @media only screen and (max-width: 1060px) {
   #logo {
     width: 30%;
@@ -240,17 +251,6 @@ body{
     margin-top: 30px;
   }
   
-}
-
-/* Τέλος για hover*/
-
-/* Για να δείξει στον χρήστη ποιο αντικείμενο του μενού έχει επιλέξει (ποιο είναι active) */
-.menu-nav a#act-menu-nav {
-  color: #efede9;
-  width: 90%;
-  position: relative; 
-  text-align: center;
-  background-color: #a19171;
 }
 
 /*------------Τέλος του μενού----------*/
@@ -966,8 +966,10 @@ input[type="submit"]:hover {
   .container .middle {
     transition: none;
     font-size: 10px;
+    line-height: 1em;
   }
 }
+
 @media only screen and (max-width: 320px) {
   .container .middle {
     transition: none;
@@ -1183,12 +1185,11 @@ input[type="submit"]:hover {
   .citroen-details {
     font-size: 7px;
   }
-}
-@media only screen and (max-width: 392px)  {
-  .citroen-details {
-    font-size: 10px;
+  #content-table{
+    line-height: 2.5em;
   }
 }
+
 @media only screen and (max-width: 324px)  {
   .citroen-details {
     font-size: 7px;
