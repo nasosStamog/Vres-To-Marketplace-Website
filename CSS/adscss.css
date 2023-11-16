@@ -1357,3 +1357,28 @@ label[for="facebookMessenger"]::before {
   background-image: url("../media/messenger.png");
   background-position: 0px 4px;
 }
+
+/* Styling form-control Class */
+.form-control {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Styling form-control Label */ 
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling form-control input, 
+select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1.5px solid #777;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 8px;
+    display: block;
+    width: 95%;
+}

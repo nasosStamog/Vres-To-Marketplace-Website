@@ -101,7 +101,72 @@
                                         </div>
                                     
                                     </fieldset>
+                                    <fieldset class="about-user">
+                                        <legend>Πες μας για σένα!</legend>
+                                        <div class="form-control">
+                                            <label for="shopping-profile" id="label-shopping-profile">
+                                                Ποιό είδος αγγελιών σε ενδιαφέρει περισσότερο;
+                                            </label>
+                                            <select name="role" id="role" required>
+                                                <option value="home-sales">Πωλήσεις Ακινήτων</option>
+                                                <option value="home-rents">Ενοικιάσεις Ακινήτων</option>
+                                                <option value="professional-rent">Ενοικιάσεις Επαγγελματικών χώρων</option>
+                                                <option value="professional-sales">Πωλήσεις Επαγγελματικών χώρων</option>
+                                                <option value="car-rents">Ενοικιάσεις Αυτοκινήτων</option>
+                                                <option value="car-sales">Ενοικιάσεις Αυτοκινήτων</option>
+                                                <option value="part-sales">Πωλήσεις Ανταλλακτικών</option>
+                                                <option value="job-seek">Αναζήτηση Εργασίας</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="job-status" id="label-job-status">
+                                                Με τι ασχολείσαι;
+                                            </label>
+                                            <select name="job-role" id="job-role" required>
+                                            <option value="employed">Εργαζόμενος</option>
+                                            <option value="unemployed">Άνεργος</option>
+                                            <option value="student">Φοιτητής</option>
+                                            <option value="retired">Συνταξιούχος</option>
+                                            <option value="other">Άλλο</option>
+                                        </select>
+                                        </div>
 
+                                        <div class="form-control">
+                                            <label for="favourite-place" id="label-favourite-place">
+                                                Σε ποιά περιοχή θα ήθελες να κατοικείς ή να εργάζεσαι;
+                                            </label>
+                                            <input type="text"
+                                                   id="place"
+                                                   placeholder="πχ. Ηράκλειο Αττικής" required/>
+                                        </div>
+
+                                        <div class="form-control">
+                                            <label for="favourite-car-type" id="label-favourite-car-type">
+                                                Ποιό είδος αυτοκινήτου σου αρέσει περισσότερο;
+                                            </label>
+                                            <select name="car-type" id="car-type" required>
+                                                <option value="sedan">Sedan</option>
+                                                <option value="Compact">Compact</option>
+                                                <option value="coupe">Coupe</option>
+                                                <option value="wagon">Wagon</option>
+                                                <option value="sports">Sports Car</option>
+                                                <option value="other">Άλλο</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-control">
+                                            <label for="favourite-home-size" id="label-favourite-home-size">
+                                                Ποιό είναι το επιθυμητό μέγεθος για ένα διαμέρισμα;
+                                            </label>
+                                            <select name="home-size" id="home-size" required>
+                                                <option value="0-30">0-30 τ.μ.</option>
+                                                <option value="30-60">30-60 τ.μ.</option>
+                                                <option value="60-90">60-90 τ.μ.</option>
+                                                <option value="90-150">90-150 τ.μ.</option>
+                                                <option value="150plus">150 και άνω τ.μ.</option>
+                                                <option value="other">Άλλο</option>
+                                            </select>
+                                    </fieldset>
                                 </div>
                                 <input type="reset" value="Καθαρισμός">
                                 <input type="submit" value="Υποβολή">
