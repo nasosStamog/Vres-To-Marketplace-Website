@@ -32,14 +32,14 @@
                     <section class="main-register">
                         <div class="main-title">
                             <h1>Δημιουργία Λογαριασμού</h1>
-                            <h6>Συμπληρώστε την παρακάτω φόρμα για να ολοκληρώσετε την έγγραφη στην σελίδα μας.</h6>
                         </div>
+                        <h4 id = "main-register">Συμπληρώστε την παρακάτω φόρμα για να ολοκληρώσετε την έγγραφη στην σελίδα μας.</h4>
                             <form class="register-form">
                                 <div class="register-fields">                                    
                                     <fieldset class="personal">
                                         <legend>Προσωπικά Στοιχεία</legend>
                                         <label for="name">Ονοματεπώνυμο:</label>
-                                        <input type="text" id="name" name="name"placeholder="πχ Σπύρος Παπαδόπουλος" title="Εισάγετε Ονοματεπώνυμο" required>
+                                        <input type="name" id="name" name="name"placeholder="πχ Σπύρος Παπαδόπουλος" title="Εισάγετε Ονοματεπώνυμο" required>
 
                                         <label for="phone">Τηλέφωνο:</label>
                                         <input type="phone" id="phone" name="phone" placeholder="πχ 6948565542" pattern="[0-9]{10}" required title="Εισάγετε 10-ψήφιο αριθμό τηλεφώνου" autocomplete="email" list="userphones" required>
@@ -47,13 +47,13 @@
                                         <datalist id = "userphones"> 
                                             <option>6942584465</option>
                                             <option>6945115557</option>
-                                        </datalist><br>
+                                        </datalist>
 
                                         <label for="address">Διεύθυνση:</label>
-                                        <input type="address" id="address" name="address" required><br>
+                                        <input type="address" id="address" name="address" required>
 
                                         <label for="email">Email:</label>
-                                        <input type="email" id="email" name="email" autocomplete="email" list="user_emails" required><br>
+                                        <input type="email" id="email" name="email" autocomplete="email" list="user_emails" required>
 
                                         <datalist id = "user_emails"> 
                                             <option>abc@gmail.com</option>
@@ -67,22 +67,23 @@
                                     <fieldset class="login">
                                         <legend>Στοιχεία Εισόδου</legend>
                                         <label for="username">Όνομα Χρήστη:</label>
-                                        <input type="text" id="username" name="username" required><br>
+                                        <input type="text" id="username" name="username" required>
 
                                         <label for="phone">Κωδικός:</label>
-                                        <input type="password" id="password" name="password" required><br>
+                                        <input type="password" id="password" name="password" required>
                                         
                                         <label for="phone">Επαλήθευση Κωδικού:</label>
-                                        <input type="password" id="password" name="password" required><br>
+                                        <input type="password" id="password" name="password" required>
                                     </fieldset>
                                     <fieldset class="contact">
                                         <legend>Επιλογές Επικοινωνίας</legend>
                                         <div class="registerOpt">
                                             <label for="newsletter">Εγγραφή στο newsletter:</label>
+                                            <input type="radio" id="newsletterYes" name="newsletter" value="yes" required>
                                             <label for="newsletterYes">Ναι</label>
-                                            <input type="checkbox" id="newsletterYes" name="newsletter1" value="yes" required>
-                                            <label for="newsletterNo">Όχι</label>
-                                            <input type="checkbox" id="newsletterNo" name="newsletter2" value="no" required><br>
+                                            
+                                            <input type="radio" id="newsletterNo" name="newsletter" value="no" required>
+                                            <label for="newsletterNo">Όχι</label><br>
                                         </div>
                                         <hr>
                                         
@@ -135,7 +136,7 @@
                                             <label for="favourite-place" id="label-favourite-place">
                                                 Σε ποιά περιοχή θα ήθελες να κατοικείς ή να εργάζεσαι;
                                             </label>
-                                            <input type="text"
+                                            <input type="place"
                                                    id="place"
                                                    placeholder="πχ. Ηράκλειο Αττικής" required/>
                                         </div>
@@ -168,8 +169,11 @@
                                             </select>
                                     </fieldset>
                                 </div>
-                                <input type="reset" value="Καθαρισμός">
-                                <input type="submit" value="Υποβολή">
+                                <div class="buttons-center">
+                                    <input type="reset" value="Καθαρισμός">
+                                    <input type="submit" value="Υποβολή">
+                                </div>
+                                <br><br>
                             </form>
 
                     </section>

@@ -1316,18 +1316,22 @@ body {
 
 /*-----------------------------Τέλος car-sales-citroen-c1-06-detailsls.html------------------------------------------*/
 /*-----------------------------Αρχή της Register.hmtl----------------------------------------------------------------*/
+/* General styling for registration form */
 .register-fields {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px;
+  row-gap: 5px;
+  column-gap: 5px;
 }
-
 
 .register-form label {
   display: flex;
   font-weight: bold;
   margin-top: 10px;
+  
 }
+
 .registerOpt label,
 .registerOpt input[type="checkbox"] {
   display: inline-block;
@@ -1337,7 +1341,6 @@ body {
 .methods {
   display: flex;
   flex-direction: column;
-
 }
 
 .methods label {
@@ -1346,6 +1349,7 @@ body {
   line-height: 150%;
 }
 
+/* Styling for communication methods icons */
 label[for="sms"]::before,
 label[for="e-mail"]::before,
 label[for="viber"]::before,
@@ -1383,27 +1387,160 @@ label[for="facebookMessenger"]::before {
   background-position: 0px 4px;
 }
 
-/* Styling form-control Class */
+/* Styling for form controls */
 .form-control {
-    text-align: left;
-    margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
-/* Styling form-control Label */ 
 .form-control label {
-    display: block;
-    margin-bottom: 5px;
+  display: flex;
+  margin-bottom: 5px;
 }
 
-/* Styling form-control input, 
-select, textarea */
 .form-control input,
 .form-control select,
 .form-control textarea {
-    border: 1.5px solid #777;
-    border-radius: 3px;
-    font-family: inherit;
-    padding: 8px;
-    display: block;
-    width: 95%;
+  border: 1.5px solid #777;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: 8px;
+  display: flex;
+  width: 85%;
+}
+
+/* Styling for personal fieldset */
+
+
+
+.personal label {
+  
+  display: flex;
+  font-weight: bold;
+  
+  margin-left: 21%;
+}
+
+.personal input[type="date"] {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-left: 21%;
+}
+
+.personal input[type="name"],
+.personal input[type="phone"],
+.personal input[type="address"],
+.personal input[type="email"]{
+  display: flex;
+  width: 55%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-left: 21%;
+}
+
+/* Styling for login fieldset */
+
+
+.login label {
+  display: flex;
+  font-weight: bold;
+  margin-left: 21%;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  display: flex;
+  width: 55%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-left: 21%;
+}
+
+
+
+
+.register-form input[type="reset"],
+.register-form input[type="submit"] {
+  font-family: myfont;
+  background-color: #724734;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.register-form input[type="reset"]:hover,
+.register-form input[type="submit"]:hover {
+  background-color: #d37f30;
+}
+
+#main-register {
+  text-align: center;
+}
+
+
+.register-form legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333; /* Choose your desired text color */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc; /* Add a border below the legend for separation */
+  padding-bottom: 5px;
+}
+
+.buttons-center{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+#label-shopping-profile {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.about-user label {
+  margin-left: 21%;
+}
+
+.about-user select {
+  width: 55%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-left: 21%;
+  box-sizing: border-box;
+}
+
+/* Optional: Add hover effect for better interaction */
+.about-user select:hover {
+  border-color: #555;
+}
+
+.about-user input[type = "place"] {
+  display: flex;
+  width: 55%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-left: 21%;
 }
