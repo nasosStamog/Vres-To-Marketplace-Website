@@ -1544,3 +1544,26 @@ label[for="facebookMessenger"]::before {
   border-radius: 5px;
   margin-left: 21%;
 }
+/*Media Queries for register.hmtl*/
+@media only screen and (max-width: 1024px) and (min-width: 426px) {
+
+  /* For tablets and small laptops: */
+  .register-form{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* For mobile phones: */
+  .register-form{
+    font-size: 14px;
+  }
+  .register-fields {
+    grid-template-columns: 1fr;
+    
+  }
+  .register-form input[type="reset"],
+  .register-form input[type="submit"] {
+    margin: 5px;
+    font-size: 13px;
+  }
+}
