@@ -73,7 +73,8 @@
                                         <input type="password" id="password" name="password" required>
                                         
                                         <label for="phone">Επαλήθευση Κωδικού:</label>
-                                        <input type="password" id="password" name="password" required>
+                                        <input type="password" id="password-validation" name="password" required oninput="checkPasswordMatch(this)">
+                                        <p id="passwordError" class="error" style="display: none;">Οι κωδικοί δεν ταιριάζουν.</p>
                                     </fieldset>
                                     <fieldset class="contact">
                                         <legend>Επιλογές Επικοινωνίας</legend>
@@ -185,6 +186,7 @@
                 </section>
             </section>
         </div>
+        <script src="main.js"></script>
     </body>
 
 </html>

@@ -1324,7 +1324,9 @@ body {
   row-gap: 5px;
   column-gap: 5px;
 }
-
+#password-error{
+  font-size: 1px;
+}
 .register-form label {
   display: flex;
   font-weight: bold;
