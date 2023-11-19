@@ -213,6 +213,14 @@ body {
     height: 60%;
     margin-top: 10px;
   }
+  
+  .sign-up-button {
+    margin-top: 2%;
+   
+    font-size:13px;
+    padding:5px 16px;
+    
+  }
 
   .menu-nav ul {
 
@@ -228,13 +236,39 @@ body {
   }
 }
 
-@media only screen and (max-width: 674px) {
+@media only screen and (max-width: 880px) {
+  #logo {
+    width: 20%;
+    height: 40%;
+    margin-top: 20px;
+  }
+  
+  .sign-up-button {
+    margin-top: 2%;
+   
+    font-size:13px;
+    padding:5px 16px;
+    
+  }
+
+  .menu-nav ul {
+    margin-left: auto;
+   
+  }
+}
+@media only screen and (max-width: 770px) {
   #logo {
     width: 30%;
     height: 50%;
     margin-top: 30px;
   }
 
+  .sign-up-button {
+    margin-top: 5%;
+   
+    font-size:13px;
+    padding:5px 16px;
+  }
   .menu-nav ul {
 
     display: grid;
@@ -254,13 +288,19 @@ body {
 
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 620px) {
   #logo {
     width: 30%;
     height: 30%;
     margin-top: 30px;
   }
 
+  .sign-up-button {
+    margin-top: 6%;
+   
+    font-size:11px;
+    padding:4px 12px;
+  }
   .menu-nav ul {
 
     display: grid;
@@ -280,11 +320,30 @@ body {
 
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 470px) {
   #logo {
     width: 30%;
     height: 30%;
-    margin-top: 30px;
+    
+    display: flex;
+  }
+  .sign-up-button {
+    margin-top: 20%;
+    margin-left: -28%;
+    float: left;
+    display: flex;
+    
+    font-size:11px;
+    padding:4px 12px;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  .sign-up-button {
+    margin-top: 26%;
+   
   }
 
 }
