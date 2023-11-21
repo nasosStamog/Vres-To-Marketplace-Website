@@ -529,19 +529,14 @@ body {
     width: 60%;
   }
 
-  .categories-menu h3 {
 
-
-    border: 2px solid #dac399;
-
-  }
 }
 
 @media only screen and (max-width: 425px) {
 
   .main-categories {
     grid-template-columns: 1fr;
-    row-gap: 10px;
+    row-gap: 20px;
   }
 
   .category img {
@@ -590,10 +585,17 @@ body {
 
   }
 }
+@media only screen and (max-width: 1024px) {
+  .categories-menu ul li {
+    font-size: 11px;
+    line-height: 3.9em;
+
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .categories-menu ul li {
-    font-size: 11px;
+    font-size: 10px;
 
   }
 }
