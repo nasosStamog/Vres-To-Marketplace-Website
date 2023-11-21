@@ -512,22 +512,16 @@ body {
 
 @media only screen and (max-width: 1600px) {
 
-  .main-categories {
-    display: flex;
-    flex-direction: row;
-  }
-
   .category img {
     height: 35%;
     width: 60%;
   }
 }
 
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 768px) {
 
   .main-categories {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .category img {
@@ -546,8 +540,8 @@ body {
 @media only screen and (max-width: 425px) {
 
   .main-categories {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
   }
 
   .category img {
@@ -604,20 +598,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 678px) {
-  .categories-menu ul {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    border: 2px solid #756c59;
-  }
 
-  .categories-menu ul li {
-    font-size: 15px;
-    line-height: 2.9em;
-
-  }
-}
 
 @media only screen and (max-width: 425px) {
   .categories-menu ul {
@@ -1400,7 +1381,7 @@ body {
 }
 
 .methods {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -1469,6 +1450,7 @@ label[for="facebookMessenger"]::before {
   display: flex;
   width: 85%;
 }
+
 
 /* Styling for personal fieldset */
 
@@ -1590,10 +1572,15 @@ label[for="facebookMessenger"]::before {
   box-sizing: border-box;
 }
 
+.about-user select option:disabled {
+  color: grey; /* Set the text color for the disabled option */
+}
 /* Optional: Add hover effect for better interaction */
 .about-user select:hover {
   border-color: #555;
 }
+
+
 
 .about-user input[type = "place"] {
   display: flex;

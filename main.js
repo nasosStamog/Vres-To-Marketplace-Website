@@ -13,10 +13,26 @@ function checkPasswordMatch(input) {
       input.setCustomValidity('');
       passwordError.style.display = 'none';
     }
-  }
+}
   
   
-  
+window.addEventListener('load', function () {
+    const newsletterYes = document.getElementById('newsletterYes');
+    const newsletterNo = document.getElementById('newsletterNo');
+    const methodsDiv = document.querySelector('.methods');
+
+    // Listen for changes in the "newsletterYes" radio button
+    newsletterYes.addEventListener('change',function(){
+        methodsDiv.style.display = newsletterYes.checked ? 'flex' : 'none';
+    });
+
+    // Listen for changes in the "newsletterNo" radio button
+    newsletterNo.addEventListener('change', function () {
+      // If "Όχι" is selected, hide the methods div
+      methodsDiv.style.display = newsletterNo.checked ? 'none' : 'flex';
+    });
+});
+
 
 //Κανόνας για έλεγχο ηλικίας
 var birthdayInput = document.getElementById('birthday');
